@@ -910,6 +910,14 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   display: none;
 }
 
+.nosotros__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
 .nosotros__blob-wrap {
   position: relative;
   aspect-ratio: 1;
