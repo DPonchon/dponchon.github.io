@@ -48,9 +48,10 @@
   --font-body:    'Nunito', 'Segoe UI', system-ui, sans-serif;
 
   /* Espaciado */
-  --section-padding:  clamp(3rem, 8vw, 6rem);
-  --container-width:  1200px;
-  --navbar-height:    72px;
+  --section-padding:    clamp(3rem, 8vw, 6rem);
+  --container-width:    1200px;
+  --navbar-height:      72px;
+  --envios-bar-height:  36px;
 
   /* Transiciones */
   --transition-base:  300ms ease;
@@ -183,10 +184,50 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 }
 
 
-/* ─── 6. NAVBAR ──────────────────────────────────── */
-#header {
+/* ─── 6. BARRA DE ENVÍOS ─────────────────────────── */
+.envios-bar {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  background-color: var(--color-oscuro);
+  color: rgba(255, 248, 240, 0.85);
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-align: center;
+  padding-block: 0.55rem;
+  height: var(--envios-bar-height);
+}
+
+.envios-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.envios-bar__sep {
+  opacity: 0.4;
+}
+
+.envios-bar__link {
+  color: var(--color-rosa-light);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.envios-bar__link:hover {
+  color: var(--color-dorado);
+}
+
+
+/* ─── 7. NAVBAR ──────────────────────────────────── */
+#header {
+  position: fixed;
+  top: var(--envios-bar-height);
   left: 0;
   right: 0;
   z-index: 1000;
@@ -504,7 +545,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: calc(var(--navbar-height) + 2rem);
+  padding-top: calc(var(--navbar-height) + var(--envios-bar-height) + 2rem);
   padding-bottom: 5rem;
   gap: 1.25rem;
 }

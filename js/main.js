@@ -106,7 +106,10 @@
 
   /* ─── 3. SMOOTH SCROLL CON OFFSET ───────────────── */
   function getNavbarHeight() {
-    return header?.offsetHeight || 64;
+    const barHeight = parseInt(
+      getComputedStyle(document.documentElement).getPropertyValue('--envios-bar-height') || '36'
+    );
+    return (header?.offsetHeight || 64) + barHeight;
   }
 
   function smoothScrollTo(targetId) {
