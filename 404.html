@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Página no encontrada — SaSa Cerámica</title>
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏺</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-beige-light: #FFFDF9;
+      --color-beige:       #F5E6D3;
+      --color-rosa:        #D4A0A0;
+      --color-terracota:   #C4836A;
+      --color-oscuro:      #3D3630;
+      --color-texto-light: #7A6A60;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body:    'Nunito', system-ui, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-beige-light);
+      color: var(--color-oscuro);
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Navbar ── */
+    .navbar {
+      background: rgba(255, 253, 249, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(212, 160, 160, 0.2);
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.2;
+    }
+
+    .logo__brand {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--color-oscuro);
+      letter-spacing: 0.02em;
+    }
+
+    .logo__sasa { color: var(--color-terracota); }
+
+    .logo__tagline {
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-texto-light);
+    }
+
+    /* ── Main content ── */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .error-box {
+      text-align: center;
+      max-width: 480px;
+    }
+
+    .error-code {
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 20vw, 9rem);
+      font-weight: 600;
+      font-style: italic;
+      line-height: 1;
+      color: var(--color-rosa);
+      opacity: 0.6;
+      margin-bottom: 0.5rem;
+    }
+
+    .error-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 600;
+      font-style: italic;
+      color: var(--color-oscuro);
+      margin-bottom: 1rem;
+    }
+
+    .error-desc {
+      font-size: 1rem;
+      color: var(--color-texto-light);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      border-radius: 9999px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: transform 200ms ease, box-shadow 200ms ease;
+    }
+
+    .btn--primary {
+      background: var(--color-terracota);
+      color: white;
+      box-shadow: 0 4px 16px rgba(196, 131, 106, 0.35);
+    }
+
+    .btn--primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(196, 131, 106, 0.5);
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-rosa), var(--color-terracota));
+      border-radius: 9999px;
+      margin: 1.2rem auto 1.5rem;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.8rem;
+      color: var(--color-texto-light);
+      border-top: 1px solid rgba(212, 160, 160, 0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="https://sasaceramica.shop/" class="logo" aria-label="SaSa Cerámica — volver al inicio">
+      <span class="logo__brand"><span class="logo__sasa">SaSa</span> Cerámica</span>
+      <span class="logo__tagline">arte en cada textura</span>
+    </a>
+  </nav>
+
+  <main>
+    <div class="error-box">
+      <p class="error-code">404</p>
+      <div class="divider"></div>
+      <h1 class="error-title">Esta página no existe</h1>
+      <p class="error-desc">
+        Parece que el rodillo se fue por otro camino.<br>
+        Volvé al inicio para explorar todos los diseños.
+      </p>
+      <a href="https://sasaceramica.shop/" class="btn btn--primary">
+        Ver todos los rodillos ↓
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 SaSa Cerámica — Hecho con ❤️ desde Argentina</p>
+  </footer>
+
+</body>
+</html>
