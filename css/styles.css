@@ -1516,6 +1516,14 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 
 /* ─── 18. MEDIA QUERIES ──────────────────────────── */
 
+/* Mobile — ocultar texto del medio en la barra de envíos */
+@media (max-width: 639px) {
+  .envios-bar__inner > span:nth-child(2),
+  .envios-bar__inner > span:nth-child(3) {
+    display: none;
+  }
+}
+
 /* Tablet — 640px */
 @media (min-width: 640px) {
   .galeria__grid {
