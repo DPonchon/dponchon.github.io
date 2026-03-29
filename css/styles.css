@@ -1414,24 +1414,25 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 
 /* Instagram main CTA */
 .btn--ig-main {
-  background: linear-gradient(135deg, var(--color-rosa) 0%, var(--color-terracota) 50%, #B05B3B 100%);
+  background: linear-gradient(135deg, #C4836A 0%, #A8644E 50%, #8B4A35 100%);
   color: white;
   padding: 1.1rem 2.5rem;
   font-size: 1.1rem;
   border: none;
-  box-shadow: 0 4px 20px rgba(176, 91, 59, 0.35);
+  box-shadow: 0 4px 20px rgba(139, 74, 53, 0.4);
   animation: igPulse 3s ease-in-out infinite;
 }
 
 .btn--ig-main:hover {
+  background: linear-gradient(135deg, #A8644E 0%, #8B4A35 50%, #6E3520 100%);
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 32px rgba(176, 91, 59, 0.5);
+  box-shadow: 0 8px 32px rgba(139, 74, 53, 0.55);
   animation: none;
 }
 
 @keyframes igPulse {
-  0%, 100% { box-shadow: 0 4px 20px rgba(176, 91, 59, 0.35); }
-  50%       { box-shadow: 0 6px 28px rgba(176, 91, 59, 0.55); }
+  0%, 100% { box-shadow: 0 4px 20px rgba(139, 74, 53, 0.4); }
+  50%       { box-shadow: 0 6px 28px rgba(139, 74, 53, 0.6); }
 }
 
 
