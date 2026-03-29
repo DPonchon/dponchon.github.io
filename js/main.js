@@ -252,7 +252,28 @@
     });
   });
 
-  // Click en CTA principal de contacto
+  // Click en WhatsApp de cada tarjeta de producto
+  document.querySelectorAll('.btn--whatsapp').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.producto-card');
+      const productName = card?.querySelector('.producto-card__name')?.textContent?.trim() || 'Desconocido';
+      gaEvent('consulta_whatsapp', {
+        event_category: 'conversion',
+        event_label: productName,
+        product_name: productName,
+      });
+    });
+  });
+
+  // Click en CTA WhatsApp principal de contacto
+  document.querySelector('.btn--wa-main')?.addEventListener('click', () => {
+    gaEvent('cta_principal_whatsapp', {
+      event_category: 'conversion',
+      event_label: 'Sección Contacto',
+    });
+  });
+
+  // Click en CTA principal de contacto (Instagram)
   document.querySelector('.btn--ig-main')?.addEventListener('click', () => {
     gaEvent('cta_principal_instagram', {
       event_category: 'conversion',
