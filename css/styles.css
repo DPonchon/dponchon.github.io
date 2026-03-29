@@ -1397,42 +1397,42 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   transform: translateY(-2px);
 }
 
-/* Botones de tarjeta (WA + IG lado a lado) */
+/* Botones de tarjeta (WA + IG apilados) */
 .producto-card__btns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
 /* WhatsApp card button */
 .btn--whatsapp {
-  background: #25D366;
+  background: #7EBF9A;
   color: white;
-  box-shadow: 0 3px 12px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 3px 12px rgba(126, 191, 154, 0.3);
+  width: 100%;
   padding-block: 0.85rem;
-  font-size: 0.88rem;
 }
 
 .btn--whatsapp:hover {
-  background: #1DAB55;
+  background: #6AAD87;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 6px 20px rgba(126, 191, 154, 0.45);
 }
 
 /* WhatsApp main CTA */
 .btn--wa-main {
-  background: #25D366;
+  background: #7EBF9A;
   color: white;
   padding: 1.1rem 2.5rem;
   font-size: 1.1rem;
   border: none;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 4px 20px rgba(126, 191, 154, 0.35);
 }
 
 .btn--wa-main:hover {
-  background: #1DAB55;
+  background: #6AAD87;
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 8px 32px rgba(126, 191, 154, 0.5);
 }
 
 /* Botones del contacto (WA + IG lado a lado) */
@@ -1448,8 +1448,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   background: linear-gradient(135deg, var(--color-rosa) 0%, var(--color-terracota) 100%);
   color: white;
   box-shadow: 0 3px 12px rgba(196, 131, 106, 0.3);
+  width: 100%;
   padding-block: 0.85rem;
-  font-size: 0.88rem;
 }
 
 .btn--instagram:hover {
