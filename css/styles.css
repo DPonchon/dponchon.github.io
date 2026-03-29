@@ -817,14 +817,14 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 }
 
 .galeria__grid {
-  columns: 1;
-  column-gap: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
   margin-bottom: 3rem;
 }
 
 .galeria__item {
-  break-inside: avoid;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
@@ -840,6 +840,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 .galeria__img {
   width: 100%;
   height: auto;
+  aspect-ratio: 4 / 3;
   display: block;
   object-fit: cover;
   transition: transform 500ms ease;
@@ -1320,7 +1321,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 /* Tablet — 640px */
 @media (min-width: 640px) {
   .galeria__grid {
-    columns: 2;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer__inner {
@@ -1351,7 +1352,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   }
 
   .galeria__grid {
-    columns: 3;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .nosotros__inner {
