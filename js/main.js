@@ -229,7 +229,74 @@
   });
 
 
-  /* ─── 7. INIT — Log ─────────────────────────────── */
+  /* ─── 7. GOOGLE ANALYTICS — EVENT TRACKING ─────── */
+  function gaEvent(eventName, params) {
+    if (typeof gtag === 'function') {
+      gtag('event', eventName, params);
+    }
+  }
+
+  // Click en botón Instagram de cada tarjeta de producto
+  document.querySelectorAll('.btn--instagram').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.producto-card');
+      const productName = card?.querySelector('.producto-card__name')?.textContent?.trim() || 'Desconocido';
+      gaEvent('consulta_instagram', {
+        event_category: 'conversion',
+        event_label: productName,
+        product_name: productName,
+      });
+    });
+  });
+
+  // Click en CTA principal de contacto
+  document.querySelector('.btn--ig-main')?.addEventListener('click', () => {
+    gaEvent('cta_principal_instagram', {
+      event_category: 'conversion',
+      event_label: 'Sección Contacto',
+    });
+  });
+
+  // Click en Instagram desde navbar / footer
+  document.querySelectorAll('.nav-link--ig, .footer__ig').forEach(btn => {
+    btn.addEventListener('click', () => {
+      gaEvent('instagram_navegacion', {
+        event_category: 'engagement',
+        event_label: btn.classList.contains('nav-link--ig') ? 'navbar' : 'footer',
+      });
+    });
+  });
+
+  // Scroll hasta sección Productos (señal de interés)
+  const productosSection = document.getElementById('productos');
+  if (productosSection) {
+    let productosTracked = false;
+    const productosObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && !productosTracked) {
+        productosTracked = true;
+        gaEvent('seccion_vista', { event_category: 'engagement', event_label: 'productos' });
+        productosObserver.disconnect();
+      }
+    }, { threshold: 0.3 });
+    productosObserver.observe(productosSection);
+  }
+
+  // Scroll hasta sección Contacto (alta intención)
+  const contactoSection = document.getElementById('contacto');
+  if (contactoSection) {
+    let contactoTracked = false;
+    const contactoObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && !contactoTracked) {
+        contactoTracked = true;
+        gaEvent('seccion_vista', { event_category: 'engagement', event_label: 'contacto' });
+        contactoObserver.disconnect();
+      }
+    }, { threshold: 0.5 });
+    contactoObserver.observe(contactoSection);
+  }
+
+
+  /* ─── 8. INIT ────────────────────────────────────── */
   // Activar las animaciones del hero inmediatamente (ya en viewport)
   requestAnimationFrame(() => {
     document.querySelectorAll('.hero .animate-on-scroll').forEach(el => {
