@@ -1067,73 +1067,77 @@
           <p class="section__desc">Calculá el costo estimado según tu provincia. Enviamos por Correo Argentino.</p>
         </div>
 
-        <div class="envio-calc__card animate-on-scroll">
+        <div class="envio-calc__form animate-on-scroll">
 
-          <div class="envio-calc__fields">
-            <div class="envio-calc__field">
-              <label class="envio-calc__label" for="calc-provincia">Provincia</label>
-              <select id="calc-provincia" class="envio-calc__select">
-                <option value="">— Seleccioná tu provincia —</option>
-                <option value="z1">CABA</option>
-                <option value="z1">Buenos Aires (GBA)</option>
-                <option value="z2">Buenos Aires (interior)</option>
-                <option value="z2">Córdoba</option>
-                <option value="z2">Santa Fe</option>
-                <option value="z2">Entre Ríos</option>
-                <option value="z2">La Pampa</option>
-                <option value="z3">Mendoza</option>
-                <option value="z3">San Luis</option>
-                <option value="z3">San Juan</option>
-                <option value="z3">Tucumán</option>
-                <option value="z3">Salta</option>
-                <option value="z3">Jujuy</option>
-                <option value="z3">Catamarca</option>
-                <option value="z3">La Rioja</option>
-                <option value="z3">Santiago del Estero</option>
-                <option value="z3">Corrientes</option>
-                <option value="z3">Misiones</option>
-                <option value="z3">Chaco</option>
-                <option value="z3">Formosa</option>
-                <option value="z4">Neuquén</option>
-                <option value="z4">Río Negro</option>
-                <option value="z4">Chubut</option>
-                <option value="z4">Santa Cruz</option>
-                <option value="z4">Tierra del Fuego</option>
-              </select>
-            </div>
+          <!-- Fila 1: Provincia -->
+          <div class="envio-calc__row">
+            <label class="envio-calc__label" for="calc-provincia">Provincia</label>
+            <select id="calc-provincia" class="envio-calc__select">
+              <option value="">— Seleccioná tu provincia —</option>
+              <option value="z1">CABA</option>
+              <option value="z1">Buenos Aires (GBA)</option>
+              <option value="z2">Buenos Aires (interior)</option>
+              <option value="z2">Córdoba</option>
+              <option value="z2">Santa Fe</option>
+              <option value="z2">Entre Ríos</option>
+              <option value="z2">La Pampa</option>
+              <option value="z3">Mendoza</option>
+              <option value="z3">San Luis</option>
+              <option value="z3">San Juan</option>
+              <option value="z3">Tucumán</option>
+              <option value="z3">Salta</option>
+              <option value="z3">Jujuy</option>
+              <option value="z3">Catamarca</option>
+              <option value="z3">La Rioja</option>
+              <option value="z3">Santiago del Estero</option>
+              <option value="z3">Corrientes</option>
+              <option value="z3">Misiones</option>
+              <option value="z3">Chaco</option>
+              <option value="z3">Formosa</option>
+              <option value="z4">Neuquén</option>
+              <option value="z4">Río Negro</option>
+              <option value="z4">Chubut</option>
+              <option value="z4">Santa Cruz</option>
+              <option value="z4">Tierra del Fuego</option>
+            </select>
+          </div>
 
-            <div class="envio-calc__field">
-              <label class="envio-calc__label" for="calc-talle">Tamaño del rodillo</label>
-              <select id="calc-talle" class="envio-calc__select">
-                <option value="">— Seleccioná el tamaño —</option>
-                <option value="s">S — 8 × 2 cm</option>
-                <option value="m">M — 10 × 2,5 cm</option>
-                <option value="l">L — 12 × 3 cm</option>
-              </select>
-            </div>
-
-            <div class="envio-calc__field">
-              <label class="envio-calc__label" for="calc-cantidad">Cantidad</label>
-              <select id="calc-cantidad" class="envio-calc__select">
-                <option value="1">1 rodillo</option>
-                <option value="2">2 rodillos</option>
-                <option value="3">3 rodillos</option>
-                <option value="4">4 o más rodillos</option>
-              </select>
+          <!-- Fila 2: Tamaño -->
+          <div class="envio-calc__row">
+            <span class="envio-calc__label">Tamaño del rodillo</span>
+            <div class="envio-calc__pills" role="group" aria-label="Tamaño del rodillo">
+              <label class="envio-calc__pill">
+                <input type="radio" name="calc-talle" value="s">
+                <span>S <em>8 × 2 cm</em></span>
+              </label>
+              <label class="envio-calc__pill">
+                <input type="radio" name="calc-talle" value="m">
+                <span>M <em>10 × 2,5 cm</em></span>
+              </label>
+              <label class="envio-calc__pill">
+                <input type="radio" name="calc-talle" value="l">
+                <span>L <em>12 × 3 cm</em></span>
+              </label>
             </div>
           </div>
 
-          <button id="calc-btn" class="btn btn--primary envio-calc__btn">
-            Calcular envío
+          <!-- Fila 3: Cantidad -->
+          <div class="envio-calc__row">
+            <label class="envio-calc__label" for="calc-cantidad">Cantidad</label>
+            <select id="calc-cantidad" class="envio-calc__select">
+              <option value="1">1 rodillo</option>
+              <option value="2">2 rodillos</option>
+              <option value="3">3 rodillos</option>
+              <option value="4">4 o más rodillos</option>
+            </select>
+          </div>
+
+          <button id="calc-btn" type="button" class="btn btn--primary envio-calc__btn">
+            Calcular costo de envío
           </button>
 
-          <div id="calc-resultado" class="envio-calc__resultado" aria-live="polite" hidden>
-            <div class="envio-calc__resultado-inner">
-              <p class="envio-calc__zona-label"></p>
-              <p class="envio-calc__precio"></p>
-              <p class="envio-calc__nota">* Estimación basada en tarifas de Correo Argentino (Encomienda Clásica). El costo final puede variar. Confirmamos el precio al coordinar el pedido.</p>
-            </div>
-          </div>
+          <!-- Resultado -->
+          <div id="calc-resultado" class="envio-calc__resultado" aria-live="polite"></div>
 
         </div>
       </div>
