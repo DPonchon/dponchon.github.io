@@ -320,7 +320,56 @@
   }
 
 
-  /* ─── 8. INIT ────────────────────────────────────── */
+  /* ─── 8. CALCULADORA DE ENVÍO ───────────────────── */
+  // Tarifas aproximadas Correo Argentino — Encomienda Clásica (ARS, marzo 2026)
+  // Pesos estimados con packaging: S≈350g, M≈550g, L≈750g
+  // Actualizá estos valores cuando cambien las tarifas en correoargentino.com.ar
+  const TARIFAS = {
+    z1: { nombre: 'CABA / Gran Buenos Aires',   s: 4500,  m: 5500,  l: 6500  },
+    z2: { nombre: 'Buenos Aires / Litoral / Cba', s: 6500,  m: 8000,  l: 9500  },
+    z3: { nombre: 'Centro / NOA / NEA',           s: 9500,  m: 11500, l: 13500 },
+    z4: { nombre: 'Patagonia / Tierra del Fuego', s: 14000, m: 17000, l: 20000 },
+  };
+
+  // Factor por cantidad de rodillos (misma caja hasta 3; caja extra para 4+)
+  const FACTOR_CANTIDAD = { '1': 1, '2': 1.4, '3': 1.7, '4': 2.2 };
+
+  const calcBtn       = document.getElementById('calc-btn');
+  const calcResultado = document.getElementById('calc-resultado');
+
+  if (calcBtn) {
+    calcBtn.addEventListener('click', () => {
+      const zona     = document.getElementById('calc-provincia').value;
+      const talle    = document.getElementById('calc-talle').value;
+      const cantidad = document.getElementById('calc-cantidad').value;
+
+      if (!zona || !talle) {
+        document.getElementById('calc-provincia').focus();
+        return;
+      }
+
+      const tarifa   = TARIFAS[zona];
+      const base     = tarifa[talle];
+      const factor   = FACTOR_CANTIDAD[cantidad] || 1;
+      const total    = Math.round(base * factor / 100) * 100; // redondear a centena
+
+      const fmt = (n) => '$' + n.toLocaleString('es-AR');
+
+      calcResultado.querySelector('.envio-calc__zona-label').textContent =
+        `Envío a ${tarifa.nombre}`;
+      calcResultado.querySelector('.envio-calc__precio').textContent =
+        `Costo estimado: ${fmt(total)}`;
+      calcResultado.removeAttribute('hidden');
+
+      gaEvent('calcular_envio', {
+        event_category: 'engagement',
+        event_label: `${tarifa.nombre} — ${talle.toUpperCase()} x${cantidad}`,
+      });
+    });
+  }
+
+
+  /* ─── 9. INIT ────────────────────────────────────── */
   // Activar las animaciones del hero inmediatamente (ya en viewport)
   requestAnimationFrame(() => {
     document.querySelectorAll('.hero .animate-on-scroll').forEach(el => {

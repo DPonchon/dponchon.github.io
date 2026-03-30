@@ -97,6 +97,7 @@
             <li><a href="#productos" class="nav-link">Productos</a></li>
             <li><a href="#galeria"   class="nav-link">Galería</a></li>
             <li><a href="#nosotros"  class="nav-link">Nosotros</a></li>
+            <li><a href="#envio"     class="nav-link">Envíos</a></li>
             <li><a href="#contacto"  class="nav-link">Contacto</a></li>
             <li>
               <a href="https://www.instagram.com/sasa.ceramica/"
@@ -135,6 +136,7 @@
           <li><a href="#productos" class="mobile-nav-link">Productos</a></li>
           <li><a href="#galeria"   class="mobile-nav-link">Galería</a></li>
           <li><a href="#nosotros"  class="mobile-nav-link">Nosotros</a></li>
+          <li><a href="#envio"     class="mobile-nav-link">Envíos</a></li>
           <li><a href="#contacto"  class="mobile-nav-link">Contacto</a></li>
           <li>
             <a href="https://www.instagram.com/sasa.ceramica/"
@@ -1053,6 +1055,91 @@
     </section>
 
     <!-- ───────────────────────────────────
+         CALCULADORA DE ENVÍO
+         ─────────────────────── -->
+    <section id="envio" class="section envio-calc" aria-labelledby="envio-titulo">
+      <div class="container">
+
+        <div class="section__header animate-on-scroll">
+          <p class="section__eyebrow">ENVÍOS A TODO EL PAÍS</p>
+          <h2 class="section__title" id="envio-titulo">¿Cuánto cuesta el envío?</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+          <p class="section__desc">Calculá el costo estimado según tu provincia. Enviamos por Correo Argentino.</p>
+        </div>
+
+        <div class="envio-calc__card animate-on-scroll">
+
+          <div class="envio-calc__fields">
+            <div class="envio-calc__field">
+              <label class="envio-calc__label" for="calc-provincia">Provincia</label>
+              <select id="calc-provincia" class="envio-calc__select">
+                <option value="">— Seleccioná tu provincia —</option>
+                <option value="z1">CABA</option>
+                <option value="z1">Buenos Aires (GBA)</option>
+                <option value="z2">Buenos Aires (interior)</option>
+                <option value="z2">Córdoba</option>
+                <option value="z2">Santa Fe</option>
+                <option value="z2">Entre Ríos</option>
+                <option value="z2">La Pampa</option>
+                <option value="z3">Mendoza</option>
+                <option value="z3">San Luis</option>
+                <option value="z3">San Juan</option>
+                <option value="z3">Tucumán</option>
+                <option value="z3">Salta</option>
+                <option value="z3">Jujuy</option>
+                <option value="z3">Catamarca</option>
+                <option value="z3">La Rioja</option>
+                <option value="z3">Santiago del Estero</option>
+                <option value="z3">Corrientes</option>
+                <option value="z3">Misiones</option>
+                <option value="z3">Chaco</option>
+                <option value="z3">Formosa</option>
+                <option value="z4">Neuquén</option>
+                <option value="z4">Río Negro</option>
+                <option value="z4">Chubut</option>
+                <option value="z4">Santa Cruz</option>
+                <option value="z4">Tierra del Fuego</option>
+              </select>
+            </div>
+
+            <div class="envio-calc__field">
+              <label class="envio-calc__label" for="calc-talle">Tamaño del rodillo</label>
+              <select id="calc-talle" class="envio-calc__select">
+                <option value="">— Seleccioná el tamaño —</option>
+                <option value="s">S — 8 × 2 cm</option>
+                <option value="m">M — 10 × 2,5 cm</option>
+                <option value="l">L — 12 × 3 cm</option>
+              </select>
+            </div>
+
+            <div class="envio-calc__field">
+              <label class="envio-calc__label" for="calc-cantidad">Cantidad</label>
+              <select id="calc-cantidad" class="envio-calc__select">
+                <option value="1">1 rodillo</option>
+                <option value="2">2 rodillos</option>
+                <option value="3">3 rodillos</option>
+                <option value="4">4 o más rodillos</option>
+              </select>
+            </div>
+          </div>
+
+          <button id="calc-btn" class="btn btn--primary envio-calc__btn">
+            Calcular envío
+          </button>
+
+          <div id="calc-resultado" class="envio-calc__resultado" aria-live="polite" hidden>
+            <div class="envio-calc__resultado-inner">
+              <p class="envio-calc__zona-label"></p>
+              <p class="envio-calc__precio"></p>
+              <p class="envio-calc__nota">* Estimación basada en tarifas de Correo Argentino (Encomienda Clásica). El costo final puede variar. Confirmamos el precio al coordinar el pedido.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────
          CONTACTO
          ─────────────────────────────────── -->
     <section id="contacto" class="section contacto" aria-labelledby="contacto-titulo">
@@ -1121,6 +1208,7 @@
           <li><a href="#productos" class="footer__link">Productos</a></li>
           <li><a href="#galeria"   class="footer__link">Galería</a></li>
           <li><a href="#nosotros"  class="footer__link">Nosotros</a></li>
+          <li><a href="#envio"     class="footer__link">Envíos</a></li>
           <li><a href="#contacto"  class="footer__link">Contacto</a></li>
         </ul>
       </div>
