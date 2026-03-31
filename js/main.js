@@ -320,7 +320,36 @@
   }
 
 
-  /* ─── 8. INIT ────────────────────────────────────── */
+  /* ─── 8. DARK MODE TOGGLE ───────────────────────── */
+  const html         = document.documentElement;
+  const themeToggles = document.querySelectorAll('.theme-toggle');
+
+  function applyTheme(dark) {
+    html.dataset.theme = dark ? 'dark' : 'light';
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    themeToggles.forEach(btn => {
+      btn.setAttribute('aria-pressed', String(dark));
+      btn.setAttribute('aria-label', dark ? 'Desactivar modo oscuro' : 'Activar modo oscuro');
+    });
+  }
+
+  // Sincronizar estado inicial de los botones con lo que ya fijó el anti-flicker
+  (function syncInitial() {
+    const isDark = html.dataset.theme === 'dark';
+    themeToggles.forEach(btn => {
+      btn.setAttribute('aria-pressed', String(isDark));
+      btn.setAttribute('aria-label', isDark ? 'Desactivar modo oscuro' : 'Activar modo oscuro');
+    });
+  })();
+
+  themeToggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      applyTheme(html.dataset.theme !== 'dark');
+    });
+  });
+
+
+  /* ─── 9. INIT ────────────────────────────────────── */
   // Activar las animaciones del hero inmediatamente (ya en viewport)
   requestAnimationFrame(() => {
     document.querySelectorAll('.hero .animate-on-scroll').forEach(el => {
