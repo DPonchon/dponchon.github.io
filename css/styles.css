@@ -879,17 +879,23 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 
 .producto-sizes--single {
   grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.producto-sizes--single .size-opt {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .size-opt__unique-badge {
-  font-size: 0.63rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--color-marron);
-  background: #E8D5B0;
-  padding: 0.2rem 0.65rem;
+  color: #fff;
+  background: #7EBF9A;
+  padding: 0.3rem 0.75rem;
   border-radius: 99px;
+  white-space: nowrap;
 }
 
 /* Franja de medidas — info global encima del grid de productos */
