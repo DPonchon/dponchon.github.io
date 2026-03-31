@@ -877,6 +877,21 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   color: var(--color-terracota);
 }
 
+.producto-sizes--single {
+  grid-template-columns: 1fr;
+}
+
+.size-opt__unique-badge {
+  font-size: 0.63rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-marron);
+  background: #E8D5B0;
+  padding: 0.2rem 0.65rem;
+  border-radius: 99px;
+}
+
 /* Franja de medidas — info global encima del grid de productos */
 .medidas-strip {
   display: flex;
