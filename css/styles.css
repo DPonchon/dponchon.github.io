@@ -1726,3 +1726,35 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
     scroll-behavior: auto;
   }
 }
+
+/* ── Floating WhatsApp button (mobile only) ── */
+.wa-fab {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .wa-fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.25rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #7EBF9A;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(126, 191, 154, 0.5);
+    z-index: 900;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+  }
+
+  .wa-fab:hover,
+  .wa-fab:focus-visible {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(126, 191, 154, 0.65);
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+}
