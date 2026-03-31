@@ -321,31 +321,25 @@
 
 
   /* ─── 8. DARK MODE TOGGLE ───────────────────────── */
-  const html         = document.documentElement;
-  const themeToggles = document.querySelectorAll('.theme-toggle');
+  const html = document.documentElement;
 
   function applyTheme(dark) {
     html.dataset.theme = dark ? 'dark' : 'light';
     localStorage.setItem('theme', dark ? 'dark' : 'light');
-    themeToggles.forEach(btn => {
+    document.querySelectorAll('.theme-toggle').forEach(btn => {
       btn.setAttribute('aria-pressed', String(dark));
       btn.setAttribute('aria-label', dark ? 'Desactivar modo oscuro' : 'Activar modo oscuro');
     });
   }
 
-  // Sincronizar estado inicial de los botones con lo que ya fijó el anti-flicker
-  (function syncInitial() {
-    const isDark = html.dataset.theme === 'dark';
-    themeToggles.forEach(btn => {
-      btn.setAttribute('aria-pressed', String(isDark));
-      btn.setAttribute('aria-label', isDark ? 'Desactivar modo oscuro' : 'Activar modo oscuro');
-    });
-  })();
+  // Sincronizar aria-pressed con el estado ya aplicado por el anti-flicker
+  applyTheme(html.dataset.theme === 'dark');
 
-  themeToggles.forEach(btn => {
-    btn.addEventListener('click', () => {
+  // Event delegation: cualquier click en .theme-toggle dispara el toggle
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('.theme-toggle')) {
       applyTheme(html.dataset.theme !== 'dark');
-    });
+    }
   });
 
 
