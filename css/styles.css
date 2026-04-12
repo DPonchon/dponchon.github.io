@@ -938,12 +938,16 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 .producto-sizes--single {
   grid-template-columns: 1fr;
   justify-items: center;
+  align-items: center;
+  min-height: 90px;
 }
 
 .producto-sizes--single .size-opt {
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
+  width: 100%;
 }
 
 .size-opt__unique-badge {
