@@ -816,8 +816,9 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 }
 
 .producto-card--promo .producto-sizes {
-  grid-template-columns: repeat(2, auto);
+  display: flex;
   justify-content: center;
+  gap: 1.5rem;
 }
 
 @media (min-width: 768px) {
