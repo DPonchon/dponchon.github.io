@@ -800,6 +800,39 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   color: #1E4D30;
 }
 
+/* Promoción — terracota vibrante */
+.producto-card__badge--promo {
+  background: rgba(196, 131, 106, 0.95);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 5px 14px;
+}
+
+/* ── Tarjeta de promoción (ancho completo) ── */
+.producto-card--promo {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .producto-card--promo {
+    flex-direction: row;
+  }
+
+  .producto-card--promo .producto-card__image-wrap {
+    flex: 0 0 50%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .producto-card--promo .producto-card__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 /* Toggle button for mobile */
 .producto-card__toggle {
   display: none;
