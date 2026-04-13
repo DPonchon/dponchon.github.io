@@ -1984,3 +1984,123 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 [data-theme="dark"] .galeria__wave-top path {
   fill: #1C1915;
 }
+
+/* ═══════════════════════════════════════
+   MERCADO LIBRE BANNER
+   ═══════════════════════════════════════ */
+
+.ml-banner {
+  background: var(--color-crema);
+  padding-block: 4rem;
+  border-top: 1px solid var(--color-beige);
+}
+
+.ml-banner__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.ml-banner__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ml-banner__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 600;
+  color: var(--color-oscuro);
+  margin: 0;
+}
+
+.ml-banner__desc {
+  color: var(--color-texto-light);
+  font-size: 0.95rem;
+  max-width: 480px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ml-steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.ml-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  max-width: 130px;
+  text-align: center;
+}
+
+.ml-step__num {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: #FFE600;
+  color: var(--color-oscuro);
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ml-step__text {
+  font-size: 0.82rem;
+  color: var(--color-texto);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.ml-step__arrow {
+  font-size: 1.2rem;
+  color: var(--color-dorado);
+  flex-shrink: 0;
+  margin-top: 0.6rem;
+}
+
+.btn--ml {
+  background: #FFE600;
+  color: var(--color-oscuro);
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(255, 230, 0, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn--ml:hover {
+  background: #f0d900;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 230, 0, 0.45);
+}
+
+@media (max-width: 580px) {
+  .ml-step__arrow { display: none; }
+  .ml-steps { gap: 1.25rem; }
+}
+
+[data-theme="dark"] .ml-banner {
+  background: #1e1a17;
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .ml-banner__title {
+  color: var(--color-beige-light);
+}
+
+[data-theme="dark"] .ml-step__text {
+  color: var(--color-texto-light);
+}
