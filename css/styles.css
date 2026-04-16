@@ -2108,3 +2108,11 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 [data-theme="dark"] .ml-step__text {
   color: var(--color-texto);
 }
+
+[data-theme="dark"] .ml-step__num {
+  color: #1a1a1a;
+}
+
+[data-theme="dark"] .btn--ml {
+  color: #1a1a1a;
+}
