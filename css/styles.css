@@ -2098,9 +2098,13 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 }
 
 [data-theme="dark"] .ml-banner__title {
-  color: var(--color-beige-light);
+  color: var(--color-oscuro);
+}
+
+[data-theme="dark"] .ml-banner__desc {
+  color: var(--color-texto);
 }
 
 [data-theme="dark"] .ml-step__text {
-  color: var(--color-texto-light);
+  color: var(--color-texto);
 }
