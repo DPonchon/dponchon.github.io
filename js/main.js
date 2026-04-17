@@ -1,5 +1,5 @@
 /**
- * SaSa Cerámica — main.js
+ * Sasa Cerámica — main.js
  * Vanilla ES6+. Sin dependencias externas.
  */
 
