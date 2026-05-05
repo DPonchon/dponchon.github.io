@@ -2192,9 +2192,15 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
-/* dark mode: se ve igual de bien sobre el degradado */
+/* dark mode: fondo igual, colores de texto fijados para que se lean bien */
 [data-theme="dark"] .envio-gratis-banner {
   box-shadow: 0 6px 28px rgba(212, 160, 160, 0.35), 0 2px 8px rgba(0,0,0,0.25);
+}
+[data-theme="dark"] .envio-gratis-banner__title {
+  color: #3D3630;
+}
+[data-theme="dark"] .envio-gratis-banner__sub {
+  color: #6B5B4E;
 }
 
 @media (max-width: 520px) {
