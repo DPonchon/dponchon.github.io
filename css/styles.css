@@ -2116,3 +2116,93 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 [data-theme="dark"] .btn--ml {
   color: #1a1a1a;
 }
+
+
+/* ─── BANNER ENVÍO GRATIS ─────────────────────────────── */
+.envio-gratis-banner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, var(--color-terracota) 0%, #b36b50 60%, var(--color-dorado) 100%);
+  border-radius: 16px;
+  padding: 1.25rem 1.75rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 6px 24px rgba(196, 131, 106, 0.35), 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.envio-gratis-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 18px,
+    rgba(255,255,255,0.04) 18px,
+    rgba(255,255,255,0.04) 36px
+  );
+  pointer-events: none;
+}
+
+.envio-gratis-banner__icon {
+  font-size: 2.4rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  animation: truck-shake 3s ease-in-out infinite;
+}
+
+@keyframes truck-shake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(4px); }
+  40%       { transform: translateX(-2px); }
+  60%       { transform: translateX(3px); }
+  80%       { transform: translateX(-1px); }
+}
+
+.envio-gratis-banner__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.envio-gratis-banner__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  line-height: 1.2;
+}
+
+.envio-gratis-banner__sub {
+  font-family: var(--font-body);
+  font-size: clamp(0.72rem, 1.5vw, 0.85rem);
+  color: rgba(255,255,255,0.82);
+  letter-spacing: 0.01em;
+}
+
+.envio-gratis-banner__badge {
+  font-size: 2rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+/* dark mode: se ve igual de bien sobre el degradado */
+[data-theme="dark"] .envio-gratis-banner {
+  box-shadow: 0 6px 28px rgba(196, 131, 106, 0.45), 0 2px 8px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 520px) {
+  .envio-gratis-banner {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+  }
+  .envio-gratis-banner__badge {
+    display: none;
+  }
+}
