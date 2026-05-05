@@ -2126,7 +2126,9 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   background: linear-gradient(135deg, var(--color-terracota) 0%, #b36b50 60%, var(--color-dorado) 100%);
   border-radius: 16px;
   padding: 1.25rem 1.75rem;
+  margin-inline: auto;
   margin-bottom: 2.5rem;
+  max-width: 52ch;
   box-shadow: 0 6px 24px rgba(196, 131, 106, 0.35), 0 2px 6px rgba(0,0,0,0.1);
   position: relative;
   overflow: hidden;
