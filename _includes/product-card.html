@@ -1,0 +1,91 @@
+{%- assign p = include.product -%}
+{%- assign delay = p.delay | default: 0 -%}
+{%- assign loading = p.image.loading | default: "lazy" -%}
+{%- assign card_class = "producto-card" -%}
+{%- if p.promo -%}{%- assign card_class = "producto-card producto-card--promo" -%}{%- endif -%}
+
+{%- comment -%} Default WhatsApp message text if not overridden {%- endcomment -%}
+{%- if p.wa_text -%}
+  {%- assign wa_text = p.wa_text -%}
+{%- elsif p.promo -%}
+  {%- capture wa_msg -%}Hola! Vi la promo del {{ p.name }} en su página y me interesa. ¿Tienen disponible?{%- endcapture -%}
+  {%- assign wa_text = wa_msg | url_encode | replace: "+", "%20" -%}
+{%- else -%}
+  {%- capture wa_msg -%}Hola! Me interesa el {{ p.name }} de su web. ¿Tienen disponible?{%- endcapture -%}
+  {%- assign wa_text = wa_msg | url_encode | replace: "+", "%20" -%}
+{%- endif -%}
+
+{%- assign cta_label = p.cta_label -%}
+{%- if cta_label == nil -%}
+  {%- if p.promo -%}{%- assign cta_label = "Quiero esta promo" -%}{%- else -%}{%- assign cta_label = "Pedir el mío" -%}{%- endif -%}
+{%- endif -%}
+
+          <article class="{{ card_class }} animate-on-scroll" data-delay="{{ delay }}">
+            <div class="producto-card__image-wrap">
+              <picture>
+                {%- if p.image.webp %}
+                <source srcset="{{ p.image.webp }}" type="image/webp">
+                {%- endif %}
+                <img
+                  src="{{ p.image.src }}"
+                  alt="{{ p.image.alt }}"
+                  class="producto-card__img"
+                  loading="{{ loading }}"
+                  width="{{ p.image.width | default: 400 }}"
+                  height="{{ p.image.height | default: 300 }}"
+                >
+              </picture>
+              {%- if p.badge %}
+              <span class="producto-card__badge producto-card__badge--{{ p.badge.type }}">{{ p.badge.label }}</span>
+              {%- endif %}
+            </div>
+            <div class="producto-card__body">
+              <h3 class="producto-card__name">{{ p.name }}</h3>
+              <p class="producto-card__desc">{{ p.desc }}</p>
+              {%- if p.single_size %}
+              <div class="producto-sizes producto-sizes--single">
+                <div class="size-opt">
+                  <span class="size-opt__unique-badge">{{ p.single_size.badge_text }}</span>
+                  <span class="size-opt__dims">{{ p.single_size.dims }}</span>
+                  <span class="size-opt__price">{{ p.single_size.price }}</span>
+                </div>
+              </div>
+              {%- else %}
+              <div class="producto-sizes">
+                {%- for s in p.sizes %}
+                <div class="size-opt">
+                  {%- if s.tag_style %}
+                  <span class="size-opt__tag" style="{{ s.tag_style }}">{{ s.tag }}</span>
+                  {%- elsif s.tag_class %}
+                  <span class="size-opt__tag size-opt__tag--{{ s.tag_class }}">{{ s.tag }}</span>
+                  {%- else %}
+                  <span class="size-opt__tag">{{ s.tag }}</span>
+                  {%- endif %}
+                  <span class="size-opt__dims">{{ s.dims }}</span>
+                  {%- if s.price_style %}
+                  <span class="size-opt__price" style="{{ s.price_style }}">{{ s.price }}</span>
+                  {%- else %}
+                  <span class="size-opt__price">{{ s.price }}</span>
+                  {%- endif %}
+                </div>
+                {%- endfor %}
+              </div>
+              {%- endif %}
+              <div class="producto-card__btns">
+                <a href="https://wa.me/5491172391639?text={{ wa_text }}"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn--whatsapp">
+                  {% include svg-whatsapp.html size=17 %}
+                  {{ cta_label }}
+                </a>
+                <a href="https://www.instagram.com/sasa.ceramica/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn--instagram">
+                  {% include svg-instagram.html size=17 stroke="2.5" %}
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </article>

@@ -1,0 +1,320 @@
+# Rodillos catalog — order matters (rendered top-to-bottom)
+# Standard rodillo sizes: S=$6.000, M=$8.000, L=$10.000
+
+- slug: promocion-8-rodillos
+  name: "Promoción: 8 Rodillos L + 2 Cajas de Regalo"
+  desc: "¡Aprovechá esta promo exclusiva! Comprá 8 rodillos texturadores en talle L (a elección entre todos los diseños) y llevate de regalo 2 cajas porta rodillo artesanales. Ideal para armar tu kit completo o regalar."
+  promo: true
+  delay: 0
+  image:
+    src: "./images/promocion_sasa.png"
+    webp: "./images/promocion_sasa.webp"
+    alt: "Promoción Sasa Cerámica: comprá 8 rodillos texturadores talle L y llevate 2 cajas porta rodillo de regalo"
+    width: 2754
+    height: 1536
+    loading: eager
+  badge:
+    type: promo
+    label: "🎁 Promoción"
+  sizes:
+    - tag: L
+      tag_class: l
+      dims: "3.8 × 12 cm · ×8"
+      price: "$80.000"
+    - tag: "+"
+      tag_style: "background: var(--color-rosa); color: var(--color-oscuro);"
+      dims: "2 Cajas porta rodillo"
+      price: "GRATIS"
+      price_style: "color: var(--color-terracota); font-weight: 700;"
+  wa_text: "Hola!%20Vi%20la%20promoci%C3%B3n%20de%208%20rodillos%20L%20%2B%202%20cajas%20en%20su%20p%C3%A1gina%20y%20me%20interesa.%20%C2%BFTienen%20disponible%3F"
+
+- slug: caja-porta-rodillo
+  name: "Caja Porta Rodillo"
+  desc: "Guardá y transportá tus rodillos con estilo. Una caja artesanal diseñada para proteger y organizar tu colección. Por tiempo limitado, los tres tamaños al mismo precio."
+  delay: 0
+  image:
+    src: "./images/caja_porta_rodillo.jpg"
+    webp: "./images/caja_porta_rodillo.webp"
+    alt: "Caja porta rodillo artesanal para guardar y transportar rodillos texturadores — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  sizes:
+    - tag: S
+      dims: "2.4 × 7.5 cm"
+      price: "$5.000"
+    - tag: M
+      tag_class: m
+      dims: "2.8 × 10 cm"
+      price: "$5.000"
+    - tag: L
+      tag_class: l
+      dims: "3.8 × 12 cm"
+      price: "$5.000"
+  cta_label: "Pedir la mía"
+  wa_text: "Hola!%20Me%20interesa%20la%20Caja%20Porta%20Rodillo%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-calaveras
+  name: "Rodillo Calaveras"
+  desc: "Estampá un diseño único de calaveras en tus piezas de arcilla. Ideal para crear texturas originales en platos, tazas y azulejos con un toque cultural y artístico."
+  delay: 0
+  image:
+    src: "./images/rodillo_calaveras.jpg"
+    webp: "./images/rodillo_calaveras.webp"
+    alt: "Rodillo texturizador con diseño de calaveras para cerámica y arcilla — Sasa Cerámica"
+  badge:
+    type: mas-vendido
+    label: "Más Vendido"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Calaveras%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-mariposas
+  name: "Rodillo Mariposas"
+  desc: "Delicadas mariposas que transforman cualquier superficie de arcilla en una obra de arte. Perfecto para piezas decorativas y regalos especiales."
+  delay: 1
+  image:
+    src: "./images/rodillo_mariposas.jpg"
+    webp: "./images/rodillo_mariposas.webp"
+    alt: "Rodillo texturizador con diseño de mariposas para cerámica y arcilla — Sasa Cerámica"
+  badge:
+    type: popular
+    label: "Popular"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Mariposas%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-jade
+  name: "Rodillo Jade"
+  desc: "Un diseño sofisticado que evoca la elegancia del jade. Creá texturas únicas y delicadas en tus piezas de cerámica con un acabado distinguido."
+  delay: 2
+  image:
+    src: "./images/rodillo_mariposas_jade.jpg"
+    webp: "./images/rodillo_mariposas_jade.webp"
+    alt: "Rodillo texturizador con diseño jade para cerámica y arcilla — Sasa Cerámica"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Jade%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-monstera
+  name: "Rodillo Monstera"
+  desc: "Las icónicas hojas de monstera en tu cerámica. Este rodillo crea texturas tropicales y modernas perfectas para piezas contemporáneas y decoración de interiores."
+  delay: 3
+  image:
+    src: "./images/rodillo_monstera.jpg"
+    webp: "./images/rodillo_monstera.webp"
+    alt: "Rodillo texturizador con diseño de hojas de monstera para cerámica — Sasa Cerámica"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Monstera%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-picaflor
+  name: "Rodillo Picaflor"
+  desc: "Pequeños picaflores en vuelo eterno en tus piezas de cerámica. Un diseño lleno de movimiento y vida para texturas únicas y delicadas que enamorarán a todos."
+  delay: 4
+  image:
+    src: "./images/rodillo_picaflor.jpg"
+    webp: "./images/rodillo_picaflor.webp"
+    alt: "Rodillo texturizador con diseño de picaflores para cerámica y arcilla — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Picaflor%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-rosas
+  name: "Rodillo Rosas"
+  desc: "Clásicas rosas que añaden un toque romántico y floral a tus piezas. Ideal para crear vajilla, macetas y objetos decorativos con elegancia atemporal."
+  delay: 5
+  image:
+    src: "./images/rodillo_rosas.jpg"
+    webp: "./images/rodillo_rosas.webp"
+    alt: "Rodillo texturizador con diseño de rosas para cerámica y arcilla — Sasa Cerámica"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Rosas%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-corazones
+  name: "Rodillo Corazones"
+  desc: "Dulces corazones para darle amor a cada pieza. Perfecto para crear regalos personalizados, vajilla romántica y objetos decorativos llenos de ternura."
+  delay: 6
+  image:
+    src: "./images/rodillo_corazones.jpg"
+    webp: "./images/rodillo_corazones.webp"
+    alt: "Rodillo texturizador con diseño de corazones para cerámica y arcilla — Sasa Cerámica"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Corazones%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-estrellas
+  name: "Rodillo Estrellas"
+  desc: "Llenás tus piezas de magia con un cielo estrellado en cerámica. Ideal para crear texturas nocturnas y únicas en cualquier superficie de arcilla."
+  delay: 7
+  image:
+    src: "./images/rodillo_estrellas.jpg"
+    webp: "./images/rodillo_estrellas.webp"
+    alt: "Rodillo texturizador con diseño de estrellas para cerámica y arcilla — Sasa Cerámica"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Estrellas%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-flor-tropical
+  name: "Rodillo Flor Tropical"
+  desc: "Flores tropicales vibrantes que transforman tus piezas en un paraíso artístico. Un diseño exuberante para cerámica con personalidad y color."
+  delay: 8
+  image:
+    src: "./images/rodillo_flor_tropical.jpg"
+    webp: "./images/rodillo_flor_tropical.webp"
+    alt: "Rodillo texturizador con diseño de flor tropical para cerámica y arcilla — Sasa Cerámica"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Flor%20Tropical%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-ladrillos
+  name: "Rodillo Ladrillos"
+  desc: "Textura de ladrillo para dar un acabado arquitectónico y urbano a tus piezas. Perfecto para creaciones contemporáneas con carácter y personalidad."
+  delay: 9
+  image:
+    src: "./images/rodillo_ladrillos.jpg"
+    webp: "./images/rodillo_ladrillos.webp"
+    alt: "Rodillo texturizador con diseño de ladrillos para cerámica y arcilla — Sasa Cerámica"
+  single_size:
+    badge_text: "Medida única"
+    dims: "2 × 12 cm"
+    price: "$8.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Ladrillos%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-madera
+  name: "Rodillo Madera"
+  desc: "Imitá la veta natural de la madera en arcilla y cerámica. Creá piezas con una textura orgánica y cálida que evoca la naturaleza en cada detalle."
+  delay: 10
+  image:
+    src: "./images/rodillo_madera.jpg"
+    webp: "./images/rodillo_madera.webp"
+    alt: "Rodillo texturizador con diseño de madera para cerámica y arcilla — Sasa Cerámica"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Madera%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-flor-mosaico
+  name: "Rodillo Flor Mosaico"
+  desc: "Un patrón floral de mosaico que llena cada pieza de detalle y geometría. Perfecto para crear texturas ornamentales y repetitivas en arcilla y cerámica."
+  delay: 12
+  image:
+    src: "./images/rodillo_flor_mosaico.jpg"
+    webp: "./images/rodillo_flor_mosaico.webp"
+    alt: "Rodillo texturizador con diseño de flor mosaico para cerámica y arcilla — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Flor%20Mosaico%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-delfin
+  name: "Rodillo Delfín"
+  desc: "Elegantes delfines en movimiento para darle vida marina a tus piezas. Ideal para crear texturas náuticas y dinámicas en cualquier superficie de arcilla."
+  delay: 13
+  image:
+    src: "./images/rodillo_delfin.jpg"
+    webp: "./images/rodillo_delfin.webp"
+    alt: "Rodillo texturizador con diseño de delfín para cerámica y arcilla — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Delf%C3%ADn%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-amor
+  name: "Rodillo Amor"
+  desc: "Un diseño lleno de amor para transformar tus piezas en regalos únicos e irresistibles. Perfecto para vajilla romántica, souvenirs y creaciones llenas de ternura."
+  delay: 14
+  image:
+    src: "./images/rodillo_amor.jpg"
+    webp: "./images/rodillo_amor.webp"
+    alt: "Rodillo texturizador con diseño de amor para cerámica y arcilla — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Amor%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-cactus
+  name: "Rodillo Cactus"
+  desc: "El encanto del desierto en cada pieza. Creá texturas llenas de personalidad con este diseño de cactus ideal para piezas decorativas y macetas artesanales."
+  delay: 15
+  image:
+    src: "./images/rodillo_cactus.jpg"
+    webp: "./images/rodillo_cactus.webp"
+    alt: "Rodillo texturizador con diseño de cactus para cerámica y arcilla — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Cactus%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-enredadera
+  name: "Rodillo Enredadera"
+  desc: "Tallos y hojas entrelazadas que dan vida vegetal a cada pieza. Un diseño orgánico y fluido perfecto para cerámicas con carácter natural y sofisticado."
+  delay: 16
+  image:
+    src: "./images/rodillo_enrredadera.jpg"
+    webp: "./images/rodillo_enrredadera.webp"
+    alt: "Rodillo texturizador con diseño de enredadera para cerámica y arcilla — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Enredadera%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: rodillo-zigzag
+  name: "Rodillo Zigzag"
+  desc: "Líneas en zigzag que generan ritmo y movimiento geométrico en cada pieza. Un diseño moderno y versátil para texturas atrevidas y contemporáneas en arcilla."
+  delay: 17
+  image:
+    src: "./images/rodillo_zigzag.jpg"
+    webp: "./images/rodillo_zigzag.webp"
+    alt: "Rodillo texturizador con diseño de zigzag para cerámica y arcilla — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  sizes:
+    - { tag: S, dims: "2.4 × 7.5 cm", price: "$6.000" }
+    - { tag: M, tag_class: m, dims: "2.8 × 10 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "3.8 × 12 cm", price: "$10.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Rodillo%20Zigzag%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
