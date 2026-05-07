@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<section id="{{ page.section_id }}" class="section productos" aria-labelledby="{{ page.section_id }}-titulo">
+  <div class="container">
+
+    <div class="section__header animate-on-scroll">
+      <p class="section__eyebrow">{{ page.section_eyebrow }}</p>
+      <h2 class="section__title" id="{{ page.section_id }}-titulo">{{ page.section_title }}</h2>
+      <div class="section__divider" aria-hidden="true"></div>
+      <p class="section__desc">{{ page.section_desc }}</p>
+    </div>
+
+    {% if page.show_envio_banner %}
+    <div class="envio-gratis-banner animate-on-scroll" aria-label="Promoción envío gratis">
+      <div class="envio-gratis-banner__icon" aria-hidden="true">🚚</div>
+      <div class="envio-gratis-banner__text">
+        <strong class="envio-gratis-banner__title">¡ENVÍO GRATIS en compras superiores a $30.000!</strong>
+        <span class="envio-gratis-banner__sub">Solo para envíos dentro de Argentina · No aplica a envíos internacionales</span>
+      </div>
+      <div class="envio-gratis-banner__badge" aria-hidden="true">🇦🇷</div>
+    </div>
+    {% endif %}
+
+    {% assign products = site.data[page.data_key] %}
+    {% if products and products.size > 0 %}
+    <div class="productos__grid">
+      {%- for p in products %}
+{% include product-card.html product=p %}
+      {%- endfor %}
+    </div>
+    {% else %}
+    <div class="categoria-vacia animate-on-scroll">
+      <p class="categoria-vacia__msg">{{ page.empty_message | default: "Próximamente nuevos productos en esta categoría." }}</p>
+      <a href="https://www.instagram.com/sasa.ceramica/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+        Seguinos en Instagram para enterarte
+      </a>
+    </div>
+    {% endif %}
+
+  </div>
+</section>
+
+{{ content }}

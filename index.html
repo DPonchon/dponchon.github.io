@@ -33,7 +33,7 @@ og_description: "Herramientas artesanales que inspiran tu arte en cerámica. Rod
         <p class="hero__subtitle animate-on-scroll">
           Rodillos texturadores artesanales con diseños únicos para dar vida a cada una de tus piezas
         </p>
-        <a href="#rodillos" class="btn btn--primary animate-on-scroll">Explorá los diseños ↓</a>
+        <a href="{{ '/rodillos/' | relative_url }}" class="btn btn--primary animate-on-scroll">Explorá los diseños →</a>
         <div class="hero__scroll-indicator animate-on-scroll" aria-hidden="true">
           <span class="scroll-arrow">↓</span>
         </div>
@@ -48,56 +48,68 @@ og_description: "Herramientas artesanales que inspiran tu arte en cerámica. Rod
     </section>
 
     <!-- ───────────────────────────────────
-         PRODUCTOS
+         CATEGORÍAS — links a páginas de productos
          ─────────────────────────────────── -->
-    <section id="rodillos" class="section productos" aria-labelledby="rodillos-titulo">
+    <section id="categorias" class="section categorias" aria-labelledby="categorias-titulo">
       <div class="container">
 
         <div class="section__header animate-on-scroll">
           <p class="section__eyebrow">NUESTROS PRODUCTOS</p>
-          <h2 class="section__title" id="rodillos-titulo">Rodillos Texturadores</h2>
+          <h2 class="section__title" id="categorias-titulo">Explorá por categoría</h2>
           <div class="section__divider" aria-hidden="true"></div>
-          <p class="section__desc">Cada rodillo está diseñado para crear texturas únicas en tus piezas de arcilla, cerámica y porcelana.</p>
+          <p class="section__desc">Herramientas artesanales para acompañar cada etapa de tu trabajo en cerámica.</p>
         </div>
 
-        <!-- ── BANNER: Envío gratis en compras +$30.000 ── -->
-        <div class="envio-gratis-banner animate-on-scroll" aria-label="Promoción envío gratis">
-          <div class="envio-gratis-banner__icon" aria-hidden="true">🚚</div>
-          <div class="envio-gratis-banner__text">
-            <strong class="envio-gratis-banner__title">¡ENVÍO GRATIS en compras superiores a $30.000!</strong>
-            <span class="envio-gratis-banner__sub">Solo para envíos dentro de Argentina · No aplica a envíos internacionales</span>
-          </div>
-          <div class="envio-gratis-banner__badge" aria-hidden="true">🇦🇷</div>
-        </div>
+        <div class="categorias__grid">
 
-        <div class="productos__grid">
+          <a href="{{ '/rodillos/' | relative_url }}" class="categoria-card animate-on-scroll" data-delay="0">
+            <div class="categoria-card__image-wrap">
+              <picture>
+                <source srcset="./images/rodillo_calaveras.webp" type="image/webp">
+                <img src="./images/rodillo_calaveras.jpg" alt="Rodillos texturadores artesanales" class="categoria-card__img" loading="lazy" width="400" height="300">
+              </picture>
+            </div>
+            <div class="categoria-card__body">
+              <h3 class="categoria-card__name">Rodillos</h3>
+              <p class="categoria-card__desc">Diseños únicos para texturar arcilla y cerámica.</p>
+              <span class="categoria-card__cta">Ver rodillos →</span>
+            </div>
+          </a>
 
-          {%- for p in site.data.rodillos %}
-{% include product-card.html product=p %}
-          {%- endfor %}
+          <a href="{{ '/moldes-y-cortantes/' | relative_url }}" class="categoria-card animate-on-scroll" data-delay="1">
+            <div class="categoria-card__image-wrap">
+              <picture>
+                <img src="./images/moldes%20y%20cortantes/Contramolde%20asa%20circular%20x%203%20unidades%20-%20costo%208000.jpeg" alt="Moldes y cortantes artesanales" class="categoria-card__img" loading="lazy" width="400" height="300">
+              </picture>
+            </div>
+            <div class="categoria-card__body">
+              <h3 class="categoria-card__name">Moldes y cortantes</h3>
+              <p class="categoria-card__desc">Para crear formas precisas y prolijas.</p>
+              <span class="categoria-card__cta">Ver moldes →</span>
+            </div>
+          </a>
 
-        </div>
-      </div>
-    </section>
+          <a href="{{ '/herramientas/' | relative_url }}" class="categoria-card categoria-card--proximamente animate-on-scroll" data-delay="2">
+            <div class="categoria-card__image-wrap categoria-card__image-wrap--placeholder" aria-hidden="true">
+              <span class="categoria-card__emoji">🛠️</span>
+            </div>
+            <div class="categoria-card__body">
+              <h3 class="categoria-card__name">Herramientas</h3>
+              <p class="categoria-card__desc">Próximamente nuevos productos.</p>
+              <span class="categoria-card__cta">Ver categoría →</span>
+            </div>
+          </a>
 
-    <!-- ───────────────────────────────────
-         MOLDES Y CORTANTES
-         ─────────────────────────────────── -->
-    <section id="moldes-cortantes" class="section productos" aria-labelledby="moldes-cortantes-titulo">
-      <div class="container">
-
-        <div class="section__header animate-on-scroll">
-          <p class="section__eyebrow">PARA DAR FORMA</p>
-          <h2 class="section__title" id="moldes-cortantes-titulo">Moldes y Cortantes</h2>
-          <div class="section__divider" aria-hidden="true"></div>
-          <p class="section__desc">Moldes, contramoldes y cortantes artesanales para crear formas precisas en arcilla y porcelana.</p>
-        </div>
-
-        <div class="productos__grid">
-
-          {%- for p in site.data.moldes_cortantes %}
-{% include product-card.html product=p %}
-          {%- endfor %}
+          <a href="{{ '/sellos/' | relative_url }}" class="categoria-card categoria-card--proximamente animate-on-scroll" data-delay="3">
+            <div class="categoria-card__image-wrap categoria-card__image-wrap--placeholder" aria-hidden="true">
+              <span class="categoria-card__emoji">✦</span>
+            </div>
+            <div class="categoria-card__body">
+              <h3 class="categoria-card__name">Sellos</h3>
+              <p class="categoria-card__desc">Próximamente nuevos productos.</p>
+              <span class="categoria-card__cta">Ver categoría →</span>
+            </div>
+          </a>
 
         </div>
       </div>
