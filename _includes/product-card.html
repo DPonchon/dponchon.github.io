@@ -3,6 +3,8 @@
 {%- assign loading = p.image.loading | default: "lazy" -%}
 {%- assign card_class = "producto-card" -%}
 {%- if p.promo -%}{%- assign card_class = "producto-card producto-card--promo" -%}{%- endif -%}
+{%- assign img_src = p.image.src | replace_first: "./", "/" | relative_url -%}
+{%- assign img_webp = p.image.webp | replace_first: "./", "/" | relative_url -%}
 
 {%- comment -%} Default WhatsApp message text if not overridden {%- endcomment -%}
 {%- if p.wa_text -%}
@@ -24,10 +26,10 @@
             <div class="producto-card__image-wrap">
               <picture>
                 {%- if p.image.webp %}
-                <source srcset="{{ p.image.webp }}" type="image/webp">
+                <source srcset="{{ img_webp }}" type="image/webp">
                 {%- endif %}
                 <img
-                  src="{{ p.image.src }}"
+                  src="{{ img_src }}"
                   alt="{{ p.image.alt }}"
                   class="producto-card__img"
                   loading="{{ loading }}"
