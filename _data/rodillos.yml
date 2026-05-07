@@ -6,6 +6,11 @@
   desc: "¡Aprovechá esta promo exclusiva! Comprá 8 rodillos texturadores en talle L (a elección entre todos los diseños) y llevate de regalo 2 cajas porta rodillo artesanales. Ideal para armar tu kit completo o regalar."
   promo: true
   delay: 0
+  seo:
+    name: "Promoción: 8 Rodillos L + 2 Cajas Porta Rodillo de Regalo"
+    description: "Comprá 8 rodillos texturadores talle L a elección y llevate 2 cajas porta rodillo artesanales de regalo. Kit ideal para ceramistas o para regalar."
+    offer:
+      price: "80000"
   image:
     src: "./images/promocion_sasa.png"
     webp: "./images/promocion_sasa.webp"

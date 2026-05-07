@@ -1,0 +1,69 @@
+{%- comment -%}
+  Generates Product JSON-LD for an array of products.
+  Params:
+    include.products  — array (e.g. site.data.rodillos)
+    include.url_path  — page path used as anchor base (e.g. "/rodillos/")
+{%- endcomment -%}
+{%- assign products = include.products -%}
+{%- assign url_path = include.url_path | default: page.url -%}
+<script type="application/ld+json">
+[
+{%- for p in products -%}
+{%- assign seo_name = p.seo.name | default: p.name -%}
+{%- assign seo_desc = p.seo.description | default: p.desc -%}
+{%- assign img_path = p.image.src | replace_first: "./", "/" -%}
+{%- assign img_url = img_path | absolute_url -%}
+{%- assign product_url = url_path | append: "#" | append: p.slug | absolute_url -%}
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": {{ seo_name | jsonify }},
+    "description": {{ seo_desc | jsonify }},
+    "image": {{ img_url | jsonify }},
+    "brand": { "@type": "Brand", "name": "Sasa Cerámica" },
+    "offers":
+    {%- if p.seo.offer -%}
+    {
+      "@type": "Offer",
+      "price": "{{ p.seo.offer.price }}",
+      "priceCurrency": "ARS",
+      "availability": "https://schema.org/InStock",
+      "url": {{ product_url | jsonify }}
+    }
+    {%- elsif p.single_size -%}
+    {%- assign single_price = p.single_size.price | remove: "$" | remove: "." | plus: 0 -%}
+    {
+      "@type": "AggregateOffer",
+      "lowPrice": "{{ single_price }}",
+      "highPrice": "{{ single_price }}",
+      "priceCurrency": "ARS",
+      "offerCount": "1",
+      "availability": "https://schema.org/InStock",
+      "url": {{ product_url | jsonify }}
+    }
+    {%- else -%}
+    {%- assign low = 0 -%}
+    {%- assign high = 0 -%}
+    {%- assign count = 0 -%}
+    {%- for s in p.sizes -%}
+      {%- assign price_int = s.price | remove: "$" | remove: "." | plus: 0 -%}
+      {%- if price_int > 0 -%}
+        {%- assign count = count | plus: 1 -%}
+        {%- if low == 0 or price_int < low -%}{%- assign low = price_int -%}{%- endif -%}
+        {%- if price_int > high -%}{%- assign high = price_int -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {
+      "@type": "AggregateOffer",
+      "lowPrice": "{{ low }}",
+      "highPrice": "{{ high }}",
+      "priceCurrency": "ARS",
+      "offerCount": "{{ count }}",
+      "availability": "https://schema.org/InStock",
+      "url": {{ product_url | jsonify }}
+    }
+    {%- endif -%}
+  }{%- unless forloop.last -%},{%- endunless %}
+{%- endfor %}
+]
+</script>

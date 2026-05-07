@@ -29,6 +29,7 @@ layout: default
 {% include product-card.html product=p %}
       {%- endfor %}
     </div>
+    {% include products-jsonld.html products=products url_path=page.url %}
     {% else %}
     <div class="categoria-vacia animate-on-scroll">
       <p class="categoria-vacia__msg">{{ page.empty_message | default: "Próximamente nuevos productos en esta categoría." }}</p>
