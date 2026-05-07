@@ -1,0 +1,52 @@
+  <!-- ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ -->
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <div class="footer__col footer__col--brand">
+        <p class="footer__logo"><span class="footer__logo-sasa">Sasa</span> Cerámica</p>
+        <p class="footer__tagline">Arte en cada textura</p>
+        <p class="footer__desc">Rodillos texturadores artesanales para cerámica, arcilla y manualidades. Desde Argentina, con amor.</p>
+      </div>
+
+      <div class="footer__col footer__col--links">
+        <p class="footer__col-title">Navegación</p>
+        <ul role="list">
+          {% for link in site.data.nav.links %}
+          <li><a href="{{ link.url }}" class="footer__link">{{ link.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--social">
+        <p class="footer__col-title">Seguinos</p>
+        <a href="https://www.instagram.com/sasa.ceramica/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="footer__ig"
+           aria-label="Instagram Sasa Cerámica (abre en nueva ventana)">
+          {% include svg-instagram.html size=20 stroke="2" %}
+          @sasa.ceramica
+        </a>
+        <p class="footer__social-desc">Seguinos para ver los últimos diseños, tips de cerámica y novedades.</p>
+      </div>
+
+    </div>
+    <div class="footer__theme-row">
+      <div class="container footer__theme-inner">
+        <label class="footer__theme-label" for="footer-theme-toggle">Modo oscuro</label>
+        <button class="theme-toggle footer-theme-toggle"
+                id="footer-theme-toggle"
+                aria-label="Activar modo oscuro"
+                aria-pressed="false">
+          <span class="theme-switch-thumb"></span>
+        </button>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Sasa Cerámica — Hecho con ❤️ desde Argentina</p>
+      </div>
+    </div>
+  </footer>

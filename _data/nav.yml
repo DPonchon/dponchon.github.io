@@ -1,0 +1,19 @@
+# Main navigation links. Used by header (desktop + mobile) and footer.
+# When categories get their own pages, change the `url` values here.
+links:
+  - label: Inicio
+    url: "#"
+  - label: Rodillos
+    url: "#rodillos"
+  - label: Moldes y cortantes
+    url: "#moldes-cortantes"
+  - label: Herramientas
+    url: "#herramientas"
+  - label: Sellos
+    url: "#sellos"
+  - label: Galería
+    url: "#galeria"
+  - label: Nosotros
+    url: "#nosotros"
+  - label: Contacto
+    url: "#contacto"

@@ -1,0 +1,25 @@
+title: Sasa Cerámica
+description: Rodillos texturadores artesanales para cerámica, arcilla y manualidades
+url: "https://sasaceramica.shop"
+baseurl: ""
+lang: es
+locale: es_AR
+
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - CLAUDE.md
+  - .gitignore
+  - README.md
+  - node_modules
+
+include:
+  - .well-known
