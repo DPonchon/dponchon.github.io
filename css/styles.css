@@ -721,6 +721,21 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 .categoria-card:hover .categoria-card__img {
   transform: scale(1.05);
 }
+.categoria-card__img--rodillos {
+  transform: scale(1.35);
+  transform-origin: center 35%;
+}
+.categoria-card:hover .categoria-card__img--rodillos {
+  transform: scale(1.42);
+}
+.categoria-card__img--moldes {
+  object-position: center 78%;
+  transform: scale(1.15);
+  transform-origin: center 78%;
+}
+.categoria-card:hover .categoria-card__img--moldes {
+  transform: scale(1.22);
+}
 .categoria-card__image-wrap--placeholder {
   display: flex;
   align-items: center;
