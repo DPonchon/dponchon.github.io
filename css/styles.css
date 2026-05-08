@@ -2050,16 +2050,10 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   box-shadow: -4px 0 40px rgba(0, 0, 0, 0.6);
 }
 
-[data-theme="dark"] .producto-card {
+[data-theme="dark"] .producto-card,
+[data-theme="dark"] .categoria-card {
   background: #282320;
   border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* Home category cards keep a white body in both modes, so pin their
-   text to the light-mode --color-oscuro instead of the inverted one. */
-[data-theme="dark"] .categoria-card__name,
-[data-theme="dark"] .categoria-card__desc {
-  color: #3D3630;
 }
 
 [data-theme="dark"] .medidas-strip__item {
