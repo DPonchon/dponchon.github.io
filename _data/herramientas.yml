@@ -1,0 +1,65 @@
+# Herramientas catalog — order matters
+
+- slug: roller-bolitas
+  name: "Roller bolitas"
+  desc: "Roller con textura de bolitas para crear patrones de relieve uniformes en tus piezas. Ideal para detalles decorativos y acabados ornamentales."
+  delay: 0
+  image:
+    src: "./images/herramientas/Roller bolitas - costo 25.000.jpeg"
+    alt: "Roller con textura de bolitas para cerámica — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Medida única"
+    dims: "Herramienta"
+    price: "$25.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Roller%20bolitas%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: cortador-de-cintas
+  name: "Cortador de cintas"
+  desc: "Cortador para hacer cintas de arcilla del mismo ancho de manera prolija y consistente. Útil para asas, decoraciones y trabajos en serie."
+  delay: 1
+  image:
+    src: "./images/herramientas/Cortador de cintas costo 11000.jpeg"
+    alt: "Cortador de cintas de arcilla — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Medida única"
+    dims: "Herramienta"
+    price: "$11.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Cortador%20de%20cintas%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: compas
+  name: "Compás"
+  desc: "Compás artesanal para trazar circunferencias precisas en tus piezas de arcilla. Indispensable para platos, posavasos y cualquier proyecto circular."
+  delay: 2
+  image:
+    src: "./images/herramientas/Compas costo 6.000.jpeg"
+    alt: "Compás artesanal para cerámica — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Medida única"
+    dims: "Herramienta"
+    price: "$6.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Comp%C3%A1s%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: guias-niveladoras
+  name: "Guías niveladoras"
+  desc: "Set de 2 guías niveladoras para emparejar el espesor de la arcilla. Disponibles en 5 mm, 6 mm y 7 mm."
+  delay: 3
+  image:
+    src: "./images/herramientas/guias niveladoras x2 (de 5mm 6mm y 7mm) costo 4000.jpg"
+    alt: "Set de 2 guías niveladoras de 5, 6 y 7 mm — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Pack x 2"
+    dims: "5, 6 o 7 mm"
+    price: "$4.000"
+  wa_text: "Hola!%20Me%20interesa%20las%20Gu%C3%ADas%20niveladoras%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
