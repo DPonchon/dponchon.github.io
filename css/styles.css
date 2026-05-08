@@ -722,11 +722,11 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   transform: scale(1.05);
 }
 .categoria-card__img--rodillos {
-  transform: scale(1.35);
-  transform-origin: center 35%;
+  transform: scale(1.7);
+  transform-origin: center 28%;
 }
 .categoria-card:hover .categoria-card__img--rodillos {
-  transform: scale(1.42);
+  transform: scale(1.78);
 }
 .categoria-card__img--moldes {
   object-position: center 78%;
