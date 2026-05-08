@@ -666,6 +666,11 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   background-color: var(--color-beige-light);
 }
 
+/* Standalone category pages: offset for fixed envios-bar + navbar. */
+.productos--page {
+  padding-top: calc(var(--navbar-height) + var(--envios-bar-height) + var(--section-padding));
+}
+
 .productos__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
