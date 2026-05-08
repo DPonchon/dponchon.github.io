@@ -56,8 +56,11 @@
         </div>
       </div>
     </nav>
+  </header>
 
-    <!-- Mobile menu -->
+    <!-- Mobile menu (outside <header> on purpose: header has transform applied
+         via nav-hidden/nav-visible, which would create a containing block and
+         clip this fixed-positioned panel to the navbar's height). -->
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Menú de navegación">
       <div class="mobile-menu__overlay" aria-hidden="true"></div>
       <nav class="mobile-menu__panel">
@@ -94,4 +97,3 @@
         </ul>
       </nav>
     </div>
-  </header>
