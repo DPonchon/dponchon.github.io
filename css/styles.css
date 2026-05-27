@@ -961,8 +961,12 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 
 .sello-personalizado {
   grid-column: 1 / -1;
+}
+
+.sello-personalizado .producto-card__body {
   max-width: 50%;
   margin-inline: auto;
+  width: 100%;
 }
 
 .sello-personalizado__fotos {
