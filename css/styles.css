@@ -1895,7 +1895,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
     max-width: 100%;
   }
 
-  .sello-foto--desktop-only {
+  .sello-personalizado__fotos img.sello-foto--desktop-only {
     display: none;
   }
 }
