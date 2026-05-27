@@ -198,6 +198,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   text-align: center;
   padding-block: 0.55rem;
   height: var(--envios-bar-height);
+  overflow: hidden;
 }
 
 .envios-bar__inner {
@@ -1884,6 +1885,14 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 
   .nosotros__para {
     max-width: none;
+  }
+
+  .nav-lang-toggle {
+    display: none;
+  }
+
+  .sello-personalizado .producto-card__body {
+    max-width: 100%;
   }
 }
 
