@@ -62,7 +62,10 @@ layout: default
         {%- endfor %}
       </div>
     </div>
+    {% include products-jsonld.html products=predefinidos url_path=page.url category=page.section_title %}
     {% endif %}
+
+    {% include breadcrumb-jsonld.html %}
 
   </div>
 </section>

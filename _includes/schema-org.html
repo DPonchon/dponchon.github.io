@@ -1,19 +1,36 @@
   <!-- ═══════════════════════════════════════
-       SCHEMA.ORG JSON-LD (Organization + WebSite)
+       SCHEMA.ORG JSON-LD (LocalBusiness + WebSite)
        ═══════════════════════════════════════ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "LocalBusiness",
+    "@id": "https://sasaceramica.shop/#business",
     "name": "Sasa Cerámica",
     "url": "https://sasaceramica.shop",
     "logo": "https://sasaceramica.shop/images/preview.jpg?v=2",
-    "description": "Rodillos texturadores artesanales para cerámica, arcilla y manualidades",
-    "sameAs": ["https://www.instagram.com/sasa.ceramica/"],
+    "image": "https://sasaceramica.shop/images/preview.jpg?v=2",
+    "description": "Rodillos texturadores artesanales, sellos, moldes y herramientas para cerámica y arcilla. Desde Argentina, con envíos a todo el país.",
+    "telephone": "+5491172391639",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AR",
+      "addressRegion": "Buenos Aires"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Argentina"
+    },
+    "sameAs": [
+      "https://www.instagram.com/sasa.ceramica/"
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "url": "https://www.instagram.com/sasa.ceramica/"
+      "telephone": "+5491172391639",
+      "url": "https://wa.me/5491172391639",
+      "availableLanguage": ["Spanish", "English"]
     }
   }
   </script>

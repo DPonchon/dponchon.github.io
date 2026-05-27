@@ -29,7 +29,8 @@ layout: default
 {% include product-card.html product=p %}
       {%- endfor %}
     </div>
-    {% include products-jsonld.html products=products url_path=page.url %}
+    {% include products-jsonld.html products=products url_path=page.url category=page.section_title %}
+    {% include breadcrumb-jsonld.html %}
     {% else %}
     <div class="categoria-vacia animate-on-scroll">
       <p class="categoria-vacia__msg"><span class="lang-es">{{ page.empty_message | default: "Próximamente nuevos productos en esta categoría." }}</span><span class="lang-en">{{ page.empty_message_en | default: "Products coming soon to this category." }}</span></p>

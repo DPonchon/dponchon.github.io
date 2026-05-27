@@ -3,9 +3,12 @@
   Params:
     include.products  — array (e.g. site.data.rodillos)
     include.url_path  — page path used as anchor base (e.g. "/rodillos/")
+    include.category  — category label for the products (e.g. "Rodillos texturadores")
 {%- endcomment -%}
 {%- assign products = include.products -%}
 {%- assign url_path = include.url_path | default: page.url -%}
+{%- assign category = include.category -%}
+{%- assign price_valid_until = "2027-12-31" -%}
 <script type="application/ld+json">
 [
 {%- for p in products -%}
@@ -20,6 +23,11 @@
     "name": {{ seo_name | jsonify }},
     "description": {{ seo_desc | jsonify }},
     "image": {{ img_url | jsonify }},
+    "sku": {{ p.slug | jsonify }},
+    "mpn": {{ p.slug | jsonify }},
+    {%- if category %}
+    "category": {{ category | jsonify }},
+    {%- endif %}
     "brand": { "@type": "Brand", "name": "Sasa Cerámica" },
     "offers":
     {%- if p.seo.offer -%}
@@ -27,6 +35,7 @@
       "@type": "Offer",
       "price": "{{ p.seo.offer.price }}",
       "priceCurrency": "ARS",
+      "priceValidUntil": "{{ price_valid_until }}",
       "availability": "https://schema.org/InStock",
       "url": {{ product_url | jsonify }}
     }
