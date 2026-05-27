@@ -961,6 +961,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 
 .sello-personalizado {
   grid-column: 1 / -1;
+  max-width: 50%;
+  margin-inline: auto;
 }
 
 .sello-personalizado__fotos {
