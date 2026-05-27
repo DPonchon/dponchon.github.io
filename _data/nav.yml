@@ -1,18 +1,26 @@
 # Main navigation links. Used by header (desktop + mobile) and footer.
 links:
   - label: Inicio
+    label_en: Home
     url: "/"
   - label: Rodillos
+    label_en: Rollers
     url: "/rodillos/"
   - label: Moldes y cortantes
+    label_en: Molds & Cutters
     url: "/moldes-y-cortantes/"
   - label: Herramientas
+    label_en: Tools
     url: "/herramientas/"
   - label: Sellos
+    label_en: Stamps
     url: "/sellos/"
   - label: Galería
+    label_en: Gallery
     url: "/#galeria"
   - label: Nosotros
+    label_en: About
     url: "/#nosotros"
   - label: Contacto
+    label_en: Contact
     url: "/#contacto"

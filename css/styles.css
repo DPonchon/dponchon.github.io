@@ -2360,3 +2360,41 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
     display: none;
   }
 }
+
+/* ─── i18n Language switcher ─────────────────────── */
+html:not([data-lang="en"]) .lang-en { display: none; }
+html[data-lang="en"] .lang-es { display: none; }
+
+.nav-lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-full);
+  color: var(--color-gris-arcilla);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition: color var(--transition-base), background var(--transition-base);
+  flex-shrink: 0;
+}
+.nav-lang-toggle:hover {
+  color: var(--color-terracota);
+  background: var(--color-rosa-bg);
+}
+.lang-toggle__sep { opacity: 0.35; margin: 0 0.05rem; }
+html:not([data-lang="en"]) .lang-toggle__es { color: var(--color-terracota); }
+html[data-lang="en"] .lang-toggle__en { color: var(--color-terracota); }
+
+.mobile-lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 0;
+  color: var(--color-texto);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+}
+.mobile-lang-toggle:hover { color: var(--color-terracota); }

@@ -15,7 +15,7 @@
           <!-- Desktop nav links -->
           <ul class="navbar__links" role="list">
             {% for link in site.data.nav.links %}
-            <li><a href="{{ link.url }}" class="nav-link">{{ link.label }}</a></li>
+            <li><a href="{{ link.url }}" class="nav-link"><span class="lang-es">{{ link.label }}</span><span class="lang-en">{{ link.label_en | default: link.label }}</span></a></li>
             {% endfor %}
             <li>
               <a href="https://www.instagram.com/sasa.ceramica/"
@@ -27,6 +27,13 @@
               </a>
             </li>
           </ul>
+
+          <!-- Language toggle -->
+          <button class="lang-toggle nav-lang-toggle" aria-label="Switch to English">
+            <span class="lang-toggle__es">ES</span>
+            <span class="lang-toggle__sep" aria-hidden="true">|</span>
+            <span class="lang-toggle__en">EN</span>
+          </button>
 
           <!-- Dark mode toggle -->
           <button class="theme-toggle nav-theme-toggle"
@@ -66,7 +73,7 @@
       <nav class="mobile-menu__panel">
         <ul role="list">
           {% for link in site.data.nav.links %}
-          <li><a href="{{ link.url }}" class="mobile-nav-link">{{ link.label }}</a></li>
+          <li><a href="{{ link.url }}" class="mobile-nav-link"><span class="lang-es">{{ link.label }}</span><span class="lang-en">{{ link.label_en | default: link.label }}</span></a></li>
           {% endfor %}
           <li>
             <a href="https://www.instagram.com/sasa.ceramica/"
@@ -76,6 +83,14 @@
               {% include svg-instagram.html size=18 stroke="2" %}
               @sasa.ceramica
             </a>
+          </li>
+          <li>
+            <button class="lang-toggle mobile-lang-toggle" aria-label="Switch to English">
+              <span class="lang-toggle__es">ES</span>
+              <span class="lang-toggle__sep" aria-hidden="true">|</span>
+              <span class="lang-toggle__en">EN</span>
+              <span class="mobile-theme-label lang-es">Español / English</span>
+            </button>
           </li>
           <li>
             <button class="theme-toggle mobile-theme-toggle"

@@ -55,12 +55,15 @@
   <!-- CSS -->
   <link rel="stylesheet" href="{{ '/css/styles.css?v=16' | relative_url }}">
 
-  <!-- Anti-flicker: aplica el tema antes de pintar la página -->
+  <!-- Anti-flicker: aplica el tema e idioma antes de pintar la página -->
   <script>
     (function(){
       var t=localStorage.getItem('theme');
       if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme:dark)').matches)){
         document.documentElement.dataset.theme='dark';
+      }
+      if(localStorage.getItem('lang')==='en'){
+        document.documentElement.dataset.lang='en';
       }
     })();
   </script>
@@ -85,6 +88,7 @@
 {% include schema-org.html %}
 
   <script src="{{ '/js/main.js?v=2' | relative_url }}"></script>
+  <script src="{{ '/js/i18n.js' | relative_url }}"></script>
 
 {% include wa-fab.html %}
 

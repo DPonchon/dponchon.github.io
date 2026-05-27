@@ -5,18 +5,18 @@ layout: default
   <div class="container">
 
     <div class="section__header animate-on-scroll">
-      <p class="section__eyebrow">{{ page.section_eyebrow }}</p>
-      <h2 class="section__title" id="{{ page.section_id }}-titulo">{{ page.section_title }}</h2>
+      <p class="section__eyebrow"><span class="lang-es">{{ page.section_eyebrow }}</span><span class="lang-en">{{ page.section_eyebrow_en | default: page.section_eyebrow }}</span></p>
+      <h2 class="section__title" id="{{ page.section_id }}-titulo"><span class="lang-es">{{ page.section_title }}</span><span class="lang-en">{{ page.section_title_en | default: page.section_title }}</span></h2>
       <div class="section__divider" aria-hidden="true"></div>
-      <p class="section__desc">{{ page.section_desc }}</p>
+      <p class="section__desc"><span class="lang-es">{{ page.section_desc }}</span><span class="lang-en">{{ page.section_desc_en | default: page.section_desc }}</span></p>
     </div>
 
     {% if page.show_envio_banner %}
     <div class="envio-gratis-banner animate-on-scroll" aria-label="Promoción envío gratis">
       <div class="envio-gratis-banner__icon" aria-hidden="true">🚚</div>
       <div class="envio-gratis-banner__text">
-        <strong class="envio-gratis-banner__title">¡ENVÍO GRATIS en compras superiores a $30.000!</strong>
-        <span class="envio-gratis-banner__sub">Solo para envíos dentro de Argentina · No aplica a envíos internacionales</span>
+        <strong class="envio-gratis-banner__title"><span class="lang-es">¡ENVÍO GRATIS en compras superiores a $30.000!</span><span class="lang-en">FREE SHIPPING on orders over $30,000!</span></strong>
+        <span class="envio-gratis-banner__sub"><span class="lang-es">Solo para envíos dentro de Argentina · No aplica a envíos internacionales</span><span class="lang-en">Domestic Argentina shipping only · Does not apply to international orders</span></span>
       </div>
       <div class="envio-gratis-banner__badge" aria-hidden="true">🇦🇷</div>
     </div>
@@ -32,9 +32,9 @@ layout: default
     {% include products-jsonld.html products=products url_path=page.url %}
     {% else %}
     <div class="categoria-vacia animate-on-scroll">
-      <p class="categoria-vacia__msg">{{ page.empty_message | default: "Próximamente nuevos productos en esta categoría." }}</p>
+      <p class="categoria-vacia__msg"><span class="lang-es">{{ page.empty_message | default: "Próximamente nuevos productos en esta categoría." }}</span><span class="lang-en">{{ page.empty_message_en | default: "Products coming soon to this category." }}</span></p>
       <a href="https://www.instagram.com/sasa.ceramica/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
-        Seguinos en Instagram para enterarte
+        <span class="lang-es">Seguinos en Instagram para enterarte</span><span class="lang-en">Follow us on Instagram to stay updated</span>
       </a>
     </div>
     {% endif %}

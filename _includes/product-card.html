@@ -19,7 +19,9 @@
 
 {%- assign cta_label = p.cta_label -%}
 {%- if cta_label == nil -%}
-  {%- if p.promo -%}{%- assign cta_label = "Quiero esta promo" -%}{%- else -%}{%- assign cta_label = "Pedir el mío" -%}{%- endif -%}
+  {%- if p.promo -%}{%- assign cta_label = "Quiero esta promo" -%}{%- assign cta_label_en = "I want this deal" -%}{%- else -%}{%- assign cta_label = "Pedir el mío" -%}{%- assign cta_label_en = "Order mine" -%}{%- endif -%}
+{%- else -%}
+  {%- assign cta_label_en = p.cta_label_en | default: cta_label -%}
 {%- endif -%}
 
           <article class="{{ card_class }} animate-on-scroll" data-delay="{{ delay }}">
@@ -43,7 +45,7 @@
             </div>
             <div class="producto-card__body">
               <h3 class="producto-card__name">{{ p.name }}</h3>
-              <p class="producto-card__desc">{{ p.desc }}</p>
+              <p class="producto-card__desc">{%- if p.desc_en %}<span class="lang-es">{{ p.desc }}</span><span class="lang-en">{{ p.desc_en }}</span>{%- else %}{{ p.desc }}{%- endif %}</p>
               {%- if p.single_size %}
               <div class="producto-sizes producto-sizes--single">
                 <div class="size-opt">
@@ -79,7 +81,7 @@
                    rel="noopener noreferrer"
                    class="btn btn--whatsapp">
                   {% include svg-whatsapp.html size=17 %}
-                  {{ cta_label }}
+                  <span class="lang-es">{{ cta_label }}</span><span class="lang-en">{{ cta_label_en }}</span>
                 </a>
                 <a href="https://www.instagram.com/sasa.ceramica/"
                    target="_blank"

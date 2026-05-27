@@ -4,6 +4,7 @@
 - slug: promocion-8-rodillos
   name: "Promoción: 8 Rodillos L + 2 Cajas de Regalo"
   desc: "¡Aprovechá esta promo exclusiva! Comprá 8 rodillos texturadores en talle L (a elección entre todos los diseños) y llevate de regalo 2 cajas porta rodillo artesanales. Ideal para armar tu kit completo o regalar."
+  desc_en: "Take advantage of this exclusive promo! Buy 8 texture rollers in size L (choose from all designs) and get 2 artisan roller boxes as a gift. Perfect for building your complete kit or giving as a gift."
   promo: true
   delay: 0
   seo:
@@ -36,6 +37,7 @@
 - slug: caja-porta-rodillo
   name: "Caja Porta Rodillo"
   desc: "Guardá y transportá tus rodillos con estilo. Una caja artesanal diseñada para proteger y organizar tu colección. Por tiempo limitado, los tres tamaños al mismo precio."
+  desc_en: "Store and transport your rollers in style. An artisan box designed to protect and organize your collection. For a limited time, all three sizes at the same price."
   delay: 0
   image:
     src: "./images/caja_porta_rodillo.jpg"
@@ -62,6 +64,7 @@
 - slug: rodillo-calaveras
   name: "Rodillo Calaveras"
   desc: "Estampá un diseño único de calaveras en tus piezas de arcilla. Ideal para crear texturas originales en platos, tazas y azulejos con un toque cultural y artístico."
+  desc_en: "Stamp a unique skull design on your clay pieces. Perfect for creating original textures on plates, cups, and tiles with a cultural and artistic touch."
   delay: 0
   image:
     src: "./images/rodillo_calaveras.jpg"
@@ -79,6 +82,7 @@
 - slug: rodillo-mariposas
   name: "Rodillo Mariposas"
   desc: "Delicadas mariposas que transforman cualquier superficie de arcilla en una obra de arte. Perfecto para piezas decorativas y regalos especiales."
+  desc_en: "Delicate butterflies that transform any clay surface into a work of art. Perfect for decorative pieces and special gifts."
   delay: 1
   image:
     src: "./images/rodillo_mariposas.jpg"
@@ -96,6 +100,7 @@
 - slug: rodillo-jade
   name: "Rodillo Jade"
   desc: "Un diseño sofisticado que evoca la elegancia del jade. Creá texturas únicas y delicadas en tus piezas de cerámica con un acabado distinguido."
+  desc_en: "A sophisticated design evoking the elegance of jade. Create unique and delicate textures on your ceramic pieces with a distinguished finish."
   delay: 2
   image:
     src: "./images/rodillo_mariposas_jade.jpg"
@@ -110,6 +115,7 @@
 - slug: rodillo-monstera
   name: "Rodillo Monstera"
   desc: "Las icónicas hojas de monstera en tu cerámica. Este rodillo crea texturas tropicales y modernas perfectas para piezas contemporáneas y decoración de interiores."
+  desc_en: "Iconic monstera leaves on your ceramics. This roller creates tropical and modern textures perfect for contemporary pieces and interior decoration."
   delay: 3
   image:
     src: "./images/rodillo_monstera.jpg"
@@ -124,6 +130,7 @@
 - slug: rodillo-picaflor
   name: "Rodillo Picaflor"
   desc: "Pequeños picaflores en vuelo eterno en tus piezas de cerámica. Un diseño lleno de movimiento y vida para texturas únicas y delicadas que enamorarán a todos."
+  desc_en: "Tiny hummingbirds in eternal flight on your ceramic pieces. A design full of movement and life for unique and delicate textures that everyone will love."
   delay: 4
   image:
     src: "./images/rodillo_picaflor.jpg"
@@ -141,6 +148,7 @@
 - slug: rodillo-rosas
   name: "Rodillo Rosas"
   desc: "Clásicas rosas que añaden un toque romántico y floral a tus piezas. Ideal para crear vajilla, macetas y objetos decorativos con elegancia atemporal."
+  desc_en: "Classic roses adding a romantic and floral touch to your pieces. Ideal for creating tableware, flowerpots, and decorative objects with timeless elegance."
   delay: 5
   image:
     src: "./images/rodillo_rosas.jpg"
@@ -155,6 +163,7 @@
 - slug: rodillo-corazones
   name: "Rodillo Corazones"
   desc: "Dulces corazones para darle amor a cada pieza. Perfecto para crear regalos personalizados, vajilla romántica y objetos decorativos llenos de ternura."
+  desc_en: "Sweet hearts to bring love to every piece. Perfect for creating personalized gifts, romantic tableware, and decorative objects full of tenderness."
   delay: 6
   image:
     src: "./images/rodillo_corazones.jpg"
@@ -169,6 +178,7 @@
 - slug: rodillo-estrellas
   name: "Rodillo Estrellas"
   desc: "Llenás tus piezas de magia con un cielo estrellado en cerámica. Ideal para crear texturas nocturnas y únicas en cualquier superficie de arcilla."
+  desc_en: "Fill your pieces with magic with a starry sky in ceramics. Ideal for creating nocturnal and unique textures on any clay surface."
   delay: 7
   image:
     src: "./images/rodillo_estrellas.jpg"
@@ -183,6 +193,7 @@
 - slug: rodillo-flor-tropical
   name: "Rodillo Flor Tropical"
   desc: "Flores tropicales vibrantes que transforman tus piezas en un paraíso artístico. Un diseño exuberante para cerámica con personalidad y color."
+  desc_en: "Vibrant tropical flowers that transform your pieces into an artistic paradise. An exuberant design for ceramics with personality and color."
   delay: 8
   image:
     src: "./images/rodillo_flor_tropical.jpg"
@@ -197,6 +208,7 @@
 - slug: rodillo-ladrillos
   name: "Rodillo Ladrillos"
   desc: "Textura de ladrillo para dar un acabado arquitectónico y urbano a tus piezas. Perfecto para creaciones contemporáneas con carácter y personalidad."
+  desc_en: "Brick texture for an architectural and urban finish on your pieces. Perfect for contemporary creations with character and personality."
   delay: 9
   image:
     src: "./images/rodillo_ladrillos.jpg"
@@ -211,6 +223,7 @@
 - slug: rodillo-madera
   name: "Rodillo Madera"
   desc: "Imitá la veta natural de la madera en arcilla y cerámica. Creá piezas con una textura orgánica y cálida que evoca la naturaleza en cada detalle."
+  desc_en: "Imitate the natural grain of wood in clay and ceramics. Create pieces with an organic and warm texture that evokes nature in every detail."
   delay: 10
   image:
     src: "./images/rodillo_madera.jpg"
@@ -225,6 +238,7 @@
 - slug: rodillo-flor-mosaico
   name: "Rodillo Flor Mosaico"
   desc: "Un patrón floral de mosaico que llena cada pieza de detalle y geometría. Perfecto para crear texturas ornamentales y repetitivas en arcilla y cerámica."
+  desc_en: "A floral mosaic pattern that fills each piece with detail and geometry. Perfect for creating ornamental and repetitive textures in clay and ceramics."
   delay: 12
   image:
     src: "./images/rodillo_flor_mosaico.jpg"
@@ -242,6 +256,7 @@
 - slug: rodillo-delfin
   name: "Rodillo Delfín"
   desc: "Elegantes delfines en movimiento para darle vida marina a tus piezas. Ideal para crear texturas náuticas y dinámicas en cualquier superficie de arcilla."
+  desc_en: "Elegant dolphins in motion to bring marine life to your pieces. Ideal for creating nautical and dynamic textures on any clay surface."
   delay: 13
   image:
     src: "./images/rodillo_delfin.jpg"
@@ -259,6 +274,7 @@
 - slug: rodillo-amor
   name: "Rodillo Amor"
   desc: "Un diseño lleno de amor para transformar tus piezas en regalos únicos e irresistibles. Perfecto para vajilla romántica, souvenirs y creaciones llenas de ternura."
+  desc_en: "A design full of love to transform your pieces into unique and irresistible gifts. Perfect for romantic tableware, souvenirs, and creations full of tenderness."
   delay: 14
   image:
     src: "./images/rodillo_amor.jpg"
@@ -276,6 +292,7 @@
 - slug: rodillo-cactus
   name: "Rodillo Cactus"
   desc: "El encanto del desierto en cada pieza. Creá texturas llenas de personalidad con este diseño de cactus ideal para piezas decorativas y macetas artesanales."
+  desc_en: "The charm of the desert in every piece. Create textures full of personality with this cactus design, ideal for decorative pieces and artisan flowerpots."
   delay: 15
   image:
     src: "./images/rodillo_cactus.jpg"
@@ -293,6 +310,7 @@
 - slug: rodillo-enredadera
   name: "Rodillo Enredadera"
   desc: "Tallos y hojas entrelazadas que dan vida vegetal a cada pieza. Un diseño orgánico y fluido perfecto para cerámicas con carácter natural y sofisticado."
+  desc_en: "Intertwined stems and leaves that bring plant life to every piece. An organic and fluid design perfect for ceramics with a natural and sophisticated character."
   delay: 16
   image:
     src: "./images/rodillo_enrredadera.jpg"
@@ -310,6 +328,7 @@
 - slug: rodillo-zigzag
   name: "Rodillo Zigzag"
   desc: "Líneas en zigzag que generan ritmo y movimiento geométrico en cada pieza. Un diseño moderno y versátil para texturas atrevidas y contemporáneas en arcilla."
+  desc_en: "Zigzag lines that generate rhythm and geometric movement in every piece. A modern and versatile design for bold and contemporary textures in clay."
   delay: 17
   image:
     src: "./images/rodillo_zigzag.jpg"

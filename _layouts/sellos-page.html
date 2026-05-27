@@ -5,14 +5,14 @@ layout: default
   <div class="container">
 
     <div class="section__header animate-on-scroll">
-      <p class="section__eyebrow">{{ page.section_eyebrow }}</p>
-      <h2 class="section__title" id="sellos-titulo">{{ page.section_title }}</h2>
+      <p class="section__eyebrow"><span class="lang-es">{{ page.section_eyebrow }}</span><span class="lang-en">{{ page.section_eyebrow_en | default: page.section_eyebrow }}</span></p>
+      <h2 class="section__title" id="sellos-titulo"><span class="lang-es">{{ page.section_title }}</span><span class="lang-en">{{ page.section_title_en | default: page.section_title }}</span></h2>
       <div class="section__divider" aria-hidden="true"></div>
-      <p class="section__desc">{{ page.section_desc }}</p>
+      <p class="section__desc"><span class="lang-es">{{ page.section_desc }}</span><span class="lang-en">{{ page.section_desc_en | default: page.section_desc }}</span></p>
     </div>
 
     <div class="sellos-subseccion">
-      <h3 class="sellos-subseccion__titulo animate-on-scroll">Personalizados</h3>
+      <h3 class="sellos-subseccion__titulo animate-on-scroll"><span class="lang-es">Personalizados</span><span class="lang-en">Custom Stamps</span></h3>
       <div class="productos__grid">
         <article class="producto-card sello-personalizado animate-on-scroll" data-delay="0">
           <div class="sello-personalizado__fotos">
@@ -27,11 +27,11 @@ layout: default
                  loading="lazy" width="400" height="400">
           </div>
           <div class="producto-card__body">
-            <h3 class="producto-card__name">Sello Personalizado</h3>
-            <p class="producto-card__desc">Envianos tu diseño o logo y lo convertimos en un sello único para firmar tus piezas. Cada sello es fabricado artesanalmente a partir de tu imagen.</p>
+            <h3 class="producto-card__name"><span class="lang-es">Sello Personalizado</span><span class="lang-en">Custom Stamp</span></h3>
+            <p class="producto-card__desc"><span class="lang-es">Envianos tu diseño o logo y lo convertimos en un sello único para firmar tus piezas. Cada sello es fabricado artesanalmente a partir de tu imagen.</span><span class="lang-en">Send us your design or logo and we'll turn it into a unique stamp to sign your pieces. Each stamp is handcrafted from your image.</span></p>
             <div class="producto-sizes producto-sizes--single">
               <div class="size-opt">
-                <span class="size-opt__unique-badge">Por unidad</span>
+                <span class="size-opt__unique-badge"><span class="lang-es">Por unidad</span><span class="lang-en">Per unit</span></span>
                 <span class="size-opt__price">$6.000</span>
               </div>
             </div>
@@ -39,7 +39,7 @@ layout: default
               <a href="https://wa.me/5491172391639?text=Hola!%20Me%20interesa%20un%20sello%20personalizado.%20%C2%BFPueden%20hacerlo%20con%20mi%20dise%C3%B1o%3F"
                  target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">
                 {% include svg-whatsapp.html size=17 %}
-                Pedir el mío
+                <span class="lang-es">Pedir el mío</span><span class="lang-en">Order mine</span>
               </a>
               <a href="https://www.instagram.com/sasa.ceramica/"
                  target="_blank" rel="noopener noreferrer" class="btn btn--instagram">
@@ -55,7 +55,7 @@ layout: default
     {% assign predefinidos = site.data.sellos_predefinidos %}
     {% if predefinidos and predefinidos.size > 0 %}
     <div class="sellos-subseccion">
-      <h3 class="sellos-subseccion__titulo animate-on-scroll">Diseños Predefinidos</h3>
+      <h3 class="sellos-subseccion__titulo animate-on-scroll"><span class="lang-es">Diseños Predefinidos</span><span class="lang-en">Predefined Designs</span></h3>
       <div class="productos__grid">
         {%- for p in predefinidos %}
 {% include product-card.html product=p %}

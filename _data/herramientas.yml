@@ -3,6 +3,7 @@
 - slug: roller-bolitas
   name: "Roller bolitas"
   desc: "Roller con textura de bolitas para crear patrones de relieve uniformes en tus piezas. Ideal para detalles decorativos y acabados ornamentales."
+  desc_en: "Roller with ball texture for creating uniform relief patterns on your pieces. Ideal for decorative details and ornamental finishes."
   delay: 0
   image:
     src: "./images/herramientas/Roller bolitas - costo 25.000.jpeg"
@@ -19,6 +20,7 @@
 - slug: cortador-de-cintas
   name: "Cortador de cintas"
   desc: "Cortador para hacer cintas de arcilla del mismo ancho de manera prolija y consistente. Útil para asas, decoraciones y trabajos en serie."
+  desc_en: "Cutter for making clay strips of the same width, neatly and consistently. Useful for handles, decorations, and series work."
   delay: 1
   image:
     src: "./images/herramientas/Cortador de cintas costo 11000.jpeg"
@@ -35,6 +37,7 @@
 - slug: compas
   name: "Compás"
   desc: "Compás artesanal para trazar circunferencias precisas en tus piezas de arcilla. Indispensable para platos, posavasos y cualquier proyecto circular."
+  desc_en: "Artisan compass for tracing precise circles on your clay pieces. Indispensable for plates, coasters, and any circular project."
   delay: 2
   image:
     src: "./images/herramientas/Compas costo 6.000.jpeg"
@@ -51,6 +54,7 @@
 - slug: guias-niveladoras
   name: "Guías niveladoras"
   desc: "Set de 2 guías niveladoras para emparejar el espesor de la arcilla. Disponibles en 5 mm, 6 mm y 7 mm."
+  desc_en: "Set of 2 leveling guides to even out clay thickness. Available in 5 mm, 6 mm, and 7 mm."
   delay: 3
   image:
     src: "./images/herramientas/guias niveladoras x2 (de 5mm 6mm y 7mm) costo 4000.jpg"
