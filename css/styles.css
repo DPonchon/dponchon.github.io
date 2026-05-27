@@ -959,16 +959,24 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   border-bottom: 2px solid var(--color-beige);
 }
 
+.sello-personalizado {
+  grid-column: 1 / -1;
+}
+
 .sello-personalizado__fotos {
   display: flex;
   gap: 0.35rem;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
   overflow: hidden;
 }
 
-.sello-personalizado__fotos .producto-card__img {
+.sello-personalizado__fotos img {
   flex: 1;
   min-width: 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  display: block;
 }
 
 /* Toggle button for mobile */
