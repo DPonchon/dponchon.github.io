@@ -944,6 +944,33 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   }
 }
 
+/* ─── Sellos page ──────────────────────────────── */
+.sellos-subseccion + .sellos-subseccion {
+  margin-top: 3rem;
+}
+
+.sellos-subseccion__titulo {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-oscuro);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-beige);
+}
+
+.sello-personalizado__fotos {
+  display: flex;
+  gap: 0.35rem;
+  overflow: hidden;
+}
+
+.sello-personalizado__fotos .producto-card__img {
+  flex: 1;
+  min-width: 0;
+  object-fit: cover;
+}
+
 /* Toggle button for mobile */
 .producto-card__toggle {
   display: none;

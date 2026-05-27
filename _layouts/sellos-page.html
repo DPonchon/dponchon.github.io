@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<section id="sellos" class="section productos productos--page" aria-labelledby="sellos-titulo">
+  <div class="container">
+
+    <div class="section__header animate-on-scroll">
+      <p class="section__eyebrow">{{ page.section_eyebrow }}</p>
+      <h2 class="section__title" id="sellos-titulo">{{ page.section_title }}</h2>
+      <div class="section__divider" aria-hidden="true"></div>
+      <p class="section__desc">{{ page.section_desc }}</p>
+    </div>
+
+    <div class="sellos-subseccion">
+      <h3 class="sellos-subseccion__titulo animate-on-scroll">Personalizados</h3>
+      <div class="productos__grid">
+        <article class="producto-card producto-card--promo animate-on-scroll" data-delay="0">
+          <div class="producto-card__image-wrap sello-personalizado__fotos">
+            <img src="{{ '/images/sellos/personalizados/sello_1.png' | relative_url }}"
+                 alt="Ejemplo de sello personalizado para cerámica — Sasa Cerámica"
+                 class="producto-card__img" loading="lazy" width="400" height="400">
+            <img src="{{ '/images/sellos/personalizados/sello_2.png' | relative_url }}"
+                 alt="Ejemplo de sello personalizado para cerámica — Sasa Cerámica"
+                 class="producto-card__img" loading="lazy" width="400" height="400">
+            <img src="{{ '/images/sellos/personalizados/sello_3.png' | relative_url }}"
+                 alt="Ejemplo de sello personalizado para cerámica — Sasa Cerámica"
+                 class="producto-card__img" loading="lazy" width="400" height="400">
+          </div>
+          <div class="producto-card__body">
+            <h3 class="producto-card__name">Sello Personalizado</h3>
+            <p class="producto-card__desc">Envianos tu diseño o logo y lo convertimos en un sello único para firmar tus piezas. Cada sello es fabricado artesanalmente a partir de tu imagen.</p>
+            <div class="producto-sizes producto-sizes--single">
+              <div class="size-opt">
+                <span class="size-opt__unique-badge">Por unidad</span>
+                <span class="size-opt__price">$6.000</span>
+              </div>
+            </div>
+            <div class="producto-card__btns">
+              <a href="https://wa.me/5491172391639?text=Hola!%20Me%20interesa%20un%20sello%20personalizado.%20%C2%BFPueden%20hacerlo%20con%20mi%20dise%C3%B1o%3F"
+                 target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">
+                {% include svg-whatsapp.html size=17 %}
+                Pedir el mío
+              </a>
+              <a href="https://www.instagram.com/sasa.ceramica/"
+                 target="_blank" rel="noopener noreferrer" class="btn btn--instagram">
+                {% include svg-instagram.html size=17 stroke="2.5" %}
+                Instagram
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    {% assign predefinidos = site.data.sellos_predefinidos %}
+    {% if predefinidos and predefinidos.size > 0 %}
+    <div class="sellos-subseccion">
+      <h3 class="sellos-subseccion__titulo animate-on-scroll">Diseños Predefinidos</h3>
+      <div class="productos__grid">
+        {%- for p in predefinidos %}
+{% include product-card.html product=p %}
+        {%- endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</section>
+
+{{ content }}
