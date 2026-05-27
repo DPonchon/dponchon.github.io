@@ -1894,6 +1894,10 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   .sello-personalizado .producto-card__body {
     max-width: 100%;
   }
+
+  .sello-foto--desktop-only {
+    display: none;
+  }
 }
 
 /* Small mobile */
