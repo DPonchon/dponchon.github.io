@@ -13,6 +13,7 @@ plugins:
   - jekyll-sitemap
 
 exclude:
+  - AUDITORIA.md
   - docs
   - Gemfile
   - Gemfile.lock
