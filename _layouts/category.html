@@ -22,6 +22,43 @@ layout: default
     </div>
     {% endif %}
 
+    {% if page.show_colores_argentina_block %}
+    <aside class="colores-block animate-on-scroll" aria-label="Personalizá los colores de tu rodillo">
+      <div class="colores-block__media">
+        <picture>
+          <source srcset="{{ '/images/rodillo_argentina.webp' | relative_url }}" type="image/webp">
+          <img
+            src="{{ '/images/rodillo_argentina.png' | relative_url }}"
+            alt="Rodillo texturador artesanal en celeste y blanco, los colores de la bandera argentina — Sasa Cerámica"
+            class="colores-block__img"
+            loading="lazy"
+            width="1122"
+            height="1402"
+          >
+        </picture>
+        <span class="colores-block__flag" aria-hidden="true">🇦🇷</span>
+      </div>
+
+      <div class="colores-block__text">
+        <p class="colores-block__eyebrow"><span class="lang-es">PERSONALIZALO</span><span class="lang-en">MAKE IT YOURS</span></p>
+        <h2 class="colores-block__title">
+          <span class="lang-es">Pedilo en los colores que <em>te representan</em></span>
+          <span class="lang-en">Order it in the colors that <em>mean something to you</em></span>
+        </h2>
+        <p class="colores-block__desc">
+          <span class="lang-es">Celeste y blanco para los que dejan el alma por la bandera. Los colores de tu club, los de tu provincia, los que combinan con tu taller. Elegís el diseño, elegís la paleta — armamos tu rodillo a tu medida.</span>
+          <span class="lang-en">Argentine blue and white for those who'd give everything for the flag. Your team's colors, your region's, the ones that match your studio. Pick the design, pick the palette — we make it your way.</span>
+        </p>
+        <a href="https://wa.me/5491172391639?text=Hola!%20Quiero%20pedir%20un%20rodillo%20personalizado%20en%20otros%20colores."
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn--primary colores-block__cta">
+          <span class="lang-es">Personalizá tu rodillo →</span><span class="lang-en">Customize your roller →</span>
+        </a>
+      </div>
+    </aside>
+    {% endif %}
+
     {% assign products = site.data[page.data_key] %}
     {% if products and products.size > 0 %}
     <div class="productos__grid">

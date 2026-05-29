@@ -2282,6 +2282,136 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 }
 
 
+/* ─── BLOQUE COLORES PERSONALIZADOS (Argentina) ───────── */
+.colores-block {
+  --celeste:       #74ACDF;
+  --celeste-bg:    #EDF4FC;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0 auto 2.5rem;
+  max-width: 1000px;
+  padding: 1.5rem;
+  background:
+    linear-gradient(135deg, var(--celeste-bg) 0%, #ffffff 55%, var(--celeste-bg) 100%);
+  border: 1px solid rgba(116, 172, 223, 0.25);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 28px rgba(116, 172, 223, 0.18), 0 2px 6px rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.colores-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--celeste) 0%, #ffffff 50%, var(--celeste) 100%);
+}
+
+.colores-block__media {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.colores-block__img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-md);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.colores-block__flag {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 1.6rem;
+  background: rgba(255,255,255,0.92);
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+.colores-block__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.colores-block__eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--celeste);
+  margin: 0;
+}
+
+.colores-block__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-oscuro);
+  margin: 0;
+}
+
+.colores-block__title em {
+  font-style: italic;
+  color: var(--celeste);
+}
+
+.colores-block__desc {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--color-texto);
+  margin: 0;
+  max-width: 52ch;
+}
+
+.colores-block__cta {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .colores-block {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 2.5rem;
+    padding: 2rem 2.25rem 2rem 2.5rem;
+  }
+  .colores-block__img {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+[data-theme="dark"] .colores-block {
+  background:
+    linear-gradient(135deg, rgba(116, 172, 223, 0.18) 0%, rgba(255,255,255,0.04) 55%, rgba(116, 172, 223, 0.18) 100%);
+  border-color: rgba(116, 172, 223, 0.35);
+}
+
+[data-theme="dark"] .colores-block__desc {
+  color: var(--color-texto-light, #cfc8c1);
+}
+
+[data-theme="dark"] .colores-block__title {
+  color: #fff;
+}
+
+
 /* ─── BANNER ENVÍO GRATIS ─────────────────────────────── */
 .envio-gratis-banner {
   display: flex;
