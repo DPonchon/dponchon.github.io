@@ -554,81 +554,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   gap: 1.25rem;
 }
 
-.hero__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1.25rem;
-}
-
-/* Hero visual (packaging photo) */
-.hero__visual {
-  position: relative;
-  width: 100%;
-  max-width: 460px;
-  margin-top: 0.75rem;
-}
-
-.hero__visual-frame {
-  position: relative;
-  border-radius: var(--radius-lg);
-  transform: rotate(-2deg);
-  transition: transform .4s ease;
-}
-
-.hero__visual:hover .hero__visual-frame {
-  transform: rotate(0);
-}
-
-.hero__visual-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: var(--radius-lg);
-  box-shadow:
-    0 22px 60px -22px rgba(74, 64, 64, 0.45),
-    0 8px 20px rgba(74, 64, 64, 0.12);
-}
-
-.hero__visual-badge {
-  position: absolute;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: #fff;
-  color: var(--color-texto);
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  padding: 0.5rem 0.85rem;
-  border-radius: 999px;
-  box-shadow: 0 8px 22px rgba(74, 64, 64, 0.18);
-  white-space: nowrap;
-}
-
-.hero__visual-badge--top {
-  top: -14px;
-  left: -10px;
-  background: var(--color-rosa);
-  color: #fff;
-  transform: rotate(-4deg);
-}
-
-.hero__visual-badge--top svg {
-  flex: 0 0 auto;
-}
-
-.hero__visual-badge--bottom {
-  bottom: -16px;
-  right: -8px;
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 0.95rem;
-  color: var(--color-terracota);
-  transform: rotate(2deg);
-}
-
 .hero__eyebrow {
   font-size: 0.8rem;
   font-weight: 700;
@@ -1830,8 +1755,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 .hero .hero__title.animated    { transition-delay: 150ms; }
 .hero .hero__subtitle.animated { transition-delay: 300ms; }
 .hero .btn.animated            { transition-delay: 450ms; }
-.hero .hero__visual.animated   { transition-delay: 250ms; }
-.hero .hero__scroll-indicator.animated { transition-delay: 700ms; }
+.hero .hero__scroll-indicator.animated { transition-delay: 600ms; }
 
 
 /* ─── 17. SCROLLBAR & SELECCIÓN ─────────────────── */
@@ -1898,37 +1822,6 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
     min-height: 100vh;
   }
 
-  .hero__content {
-    display: grid;
-    grid-template-columns: 1.05fr 1fr;
-    align-items: center;
-    text-align: left;
-    gap: 4rem;
-    max-width: 1180px;
-  }
-
-  .hero__text {
-    align-items: flex-start;
-    text-align: left;
-    grid-column: 1;
-  }
-
-  .hero__title {
-    max-width: none;
-  }
-
-  .hero__visual {
-    grid-column: 2;
-    margin-top: 0;
-    justify-self: end;
-    max-width: 520px;
-  }
-
-  .hero__scroll-indicator {
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
-
   .navbar__links {
     display: flex;
   }
@@ -1978,25 +1871,11 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 /* Mobile-only styles */
 @media (max-width: 767px) {
   .hero {
-    min-height: auto;
+    min-height: 90vh;
   }
 
   .hero__content {
     padding-bottom: 4rem;
-  }
-
-  .hero__visual {
-    max-width: 340px;
-    margin-top: 1.25rem;
-  }
-
-  .hero__visual-badge {
-    font-size: 0.72rem;
-    padding: 0.4rem 0.7rem;
-  }
-
-  .hero__visual-badge--bottom {
-    font-size: 0.85rem;
   }
 
   /* Show toggle button on touch devices for image swap */
