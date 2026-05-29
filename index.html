@@ -25,16 +25,44 @@ og_description: "Herramientas artesanales que inspiran tu arte en cerámica. Rod
       </div>
 
       <div class="container hero__content">
-        <p class="hero__eyebrow animate-on-scroll"><span class="lang-es">✦ Herramientas Artesanales ✦</span><span class="lang-en">✦ Artisan Tools ✦</span></p>
-        <h1 class="hero__title animate-on-scroll">
-          <span class="lang-es">Herramientas que inspiran<br><em>tu arte en cerámica</em></span>
-          <span class="lang-en">Tools that inspire<br><em>your ceramic art</em></span>
-        </h1>
-        <p class="hero__subtitle animate-on-scroll">
-          <span class="lang-es">Rodillos texturadores artesanales con diseños únicos para dar vida a cada una de tus piezas</span>
-          <span class="lang-en">Artisan texture rollers with unique designs to bring each of your pieces to life</span>
-        </p>
-        <a href="{{ '/rodillos/' | relative_url }}" class="btn btn--primary animate-on-scroll"><span class="lang-es">Explorá los diseños →</span><span class="lang-en">Explore the designs →</span></a>
+        <div class="hero__text">
+          <p class="hero__eyebrow animate-on-scroll"><span class="lang-es">✦ Herramientas Artesanales ✦</span><span class="lang-en">✦ Artisan Tools ✦</span></p>
+          <h1 class="hero__title animate-on-scroll">
+            <span class="lang-es">Herramientas que inspiran<br><em>tu arte en cerámica</em></span>
+            <span class="lang-en">Tools that inspire<br><em>your ceramic art</em></span>
+          </h1>
+          <p class="hero__subtitle animate-on-scroll">
+            <span class="lang-es">Rodillos texturadores artesanales con diseños únicos para dar vida a cada una de tus piezas. Empacados a mano, llegan listos para regalar.</span>
+            <span class="lang-en">Artisan texture rollers with unique designs to bring each of your pieces to life. Hand-packed, arriving ready to gift.</span>
+          </p>
+          <a href="{{ '/rodillos/' | relative_url }}" class="btn btn--primary animate-on-scroll"><span class="lang-es">Explorá los diseños →</span><span class="lang-en">Explore the designs →</span></a>
+        </div>
+
+        <div class="hero__visual animate-on-scroll" aria-hidden="false">
+          <div class="hero__visual-frame">
+            <picture>
+              <source srcset="{{ '/images/packaging.webp' | relative_url }}" type="image/webp">
+              <img
+                src="{{ '/images/packaging.png' | relative_url }}"
+                alt="Pedido de Sasa Cerámica empacado a mano: tres rodillos texturadores envueltos con galletita de cerámica firmada en caja kraft"
+                class="hero__visual-img"
+                width="800"
+                height="600"
+                fetchpriority="high"
+              >
+            </picture>
+            <span class="hero__visual-badge hero__visual-badge--top">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+              </svg>
+              <span class="lang-es">Llega listo para regalar</span><span class="lang-en">Arrives gift-ready</span>
+            </span>
+            <span class="hero__visual-badge hero__visual-badge--bottom">
+              <span class="lang-es">✦ Hecho a mano en Argentina</span><span class="lang-en">✦ Handmade in Argentina</span>
+            </span>
+          </div>
+        </div>
+
         <div class="hero__scroll-indicator animate-on-scroll" aria-hidden="true">
           <span class="scroll-arrow">↓</span>
         </div>
