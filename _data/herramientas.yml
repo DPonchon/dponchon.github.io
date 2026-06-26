@@ -1,10 +1,62 @@
 # Herramientas catalog — order matters
 
+- slug: combo-base-apoya-tazas
+  name: "Combo Base Apoya Tazas — 3 medidas"
+  desc: "¡Aprovechá esta promo! Set con 3 bases apoya tazas en distintas medidas (3 cm, 5 cm y 7 cm). Ideales para colocar las asas, estampar con sellos o realizar el junquillo en tus piezas."
+  desc_en: "Take advantage of this promo! Set with 3 mug bases in different sizes (3 cm, 5 cm, and 7 cm). Ideal for attaching handles, stamping with seals, or creating the foot ring on your pieces."
+  promo: true
+  delay: 0
+  image:
+    src: "./images/herramientas/Combo base apoya tazas x 3 medidas - costo 38000.png"
+    alt: "Combo promocional: 3 bases apoya tazas de 3, 5 y 7 cm — Sasa Cerámica"
+  badge:
+    type: promo
+    label: "🎁 Promoción"
+  single_size:
+    badge_text: "Set x 3"
+    dims: "3 cm · 5 cm · 7 cm"
+    price: "$38.000"
+  wa_text: "Hola!%20Vi%20la%20promo%20del%20Combo%20Base%20Apoya%20Tazas%20en%20su%20p%C3%A1gina%20y%20me%20interesa.%20%C2%BFTienen%20disponible%3F"
+
+- slug: soporte-taza-junquillo
+  name: "Soporte taza junquillo"
+  desc: "Soporte para realizar el junquillo en tazas y vasos con consistencia. Incluye dos medidas intercambiables (5 cm y 7 cm) para adaptarse a distintos tamaños de piezas."
+  desc_en: "Stand for creating the foot ring on cups and glasses with consistency. Includes two interchangeable sizes (5 cm and 7 cm) to fit different piece sizes."
+  delay: 1
+  image:
+    src: "./images/herramientas/Soporte taza junquillo x 2 medidas - costo 18000.jpeg"
+    alt: "Soporte para realizar junquillo en tazas con medidas intercambiables de 5 y 7 cm — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Pack x 2"
+    dims: "5 cm · 7 cm"
+    price: "$18.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Soporte%20taza%20junquillo%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: base-apoya-tazas
+  name: "Base apoya tazas"
+  desc: "Base para apoyar tus tazas mientras les colocás las asas, las decorás con sellos o trabajás los detalles finales. Incluye dos medidas intercambiables (5 cm y 7 cm)."
+  desc_en: "Base to rest your cups while attaching handles, decorating with seals, or working on the final details. Includes two interchangeable sizes (5 cm and 7 cm)."
+  delay: 2
+  image:
+    src: "./images/herramientas/Base apoya tazas x 2 medidas - costo 23000.jpeg"
+    alt: "Base apoya tazas con medidas intercambiables de 5 y 7 cm — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Pack x 2"
+    dims: "5 cm · 7 cm"
+    price: "$23.000"
+  wa_text: "Hola!%20Me%20interesa%20la%20Base%20apoya%20tazas%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
 - slug: roller-bolitas
   name: "Roller bolitas"
   desc: "Roller con textura de bolitas para crear patrones de relieve uniformes en tus piezas. Ideal para detalles decorativos y acabados ornamentales."
   desc_en: "Roller with ball texture for creating uniform relief patterns on your pieces. Ideal for decorative details and ornamental finishes."
-  delay: 0
+  delay: 3
   image:
     src: "./images/herramientas/Roller bolitas - costo 25.000.jpeg"
     alt: "Roller con textura de bolitas para cerámica — Sasa Cerámica"
@@ -21,7 +73,7 @@
   name: "Cortador de cintas"
   desc: "Cortador para hacer cintas de arcilla del mismo ancho de manera prolija y consistente. Útil para asas, decoraciones y trabajos en serie."
   desc_en: "Cutter for making clay strips of the same width, neatly and consistently. Useful for handles, decorations, and series work."
-  delay: 1
+  delay: 4
   image:
     src: "./images/herramientas/Cortador de cintas costo 11000.jpeg"
     alt: "Cortador de cintas de arcilla — Sasa Cerámica"
@@ -38,7 +90,7 @@
   name: "Compás"
   desc: "Compás artesanal para trazar circunferencias precisas en tus piezas de arcilla. Indispensable para platos, posavasos y cualquier proyecto circular."
   desc_en: "Artisan compass for tracing precise circles on your clay pieces. Indispensable for plates, coasters, and any circular project."
-  delay: 2
+  delay: 5
   image:
     src: "./images/herramientas/Compas costo 6.000.jpeg"
     alt: "Compás artesanal para cerámica — Sasa Cerámica"
@@ -55,7 +107,7 @@
   name: "Guías niveladoras"
   desc: "Set de 2 guías niveladoras para emparejar el espesor de la arcilla. Disponibles en 5 mm, 6 mm y 7 mm."
   desc_en: "Set of 2 leveling guides to even out clay thickness. Available in 5 mm, 6 mm, and 7 mm."
-  delay: 3
+  delay: 6
   image:
     src: "./images/herramientas/guias niveladoras x2 (de 5mm 6mm y 7mm) costo 4000.jpg"
     alt: "Set de 2 guías niveladoras de 5, 6 y 7 mm — Sasa Cerámica"
