@@ -12,6 +12,9 @@ links:
   - label: Herramientas
     label_en: Tools
     url: "/herramientas/"
+  - label: Alfarería
+    label_en: Pottery
+    url: "/alfareria/"
   - label: Sellos
     label_en: Stamps
     url: "/sellos/"
