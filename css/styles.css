@@ -816,6 +816,11 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   transform: scale(1.03);
 }
 
+#herramientas .producto-card__img {
+  object-fit: contain;
+  background: var(--color-beige);
+}
+
 /* Image swap (hover) */
 .producto-card__image-wrap.has-result .producto-card__img--main,
 .producto-card__image-wrap.has-result .producto-card__img--result {
