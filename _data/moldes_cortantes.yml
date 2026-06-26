@@ -298,3 +298,37 @@
     dims: "Tamaños variados"
     price: "$12.000"
   wa_text: "Hola!%20Me%20interesa%20el%20Cortante%20etiquetas%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: cortante-plato-festoneado
+  name: "Cortante plato festoneado"
+  desc: "Cortante con borde festoneado para crear platos con un terminación delicada y elegante. Las medidas no contemplan la reducción de la pasta."
+  desc_en: "Cutter with scalloped edge for making plates with a delicate and elegant finish. Sizes do not account for clay shrinkage."
+  delay: 18
+  image:
+    src: "./images/moldes y cortantes/Cortante plato festoneado - costo 12000.jpeg"
+    alt: "Cortante para platos con borde festoneado — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Medida única"
+    dims: "22 cm"
+    price: "$12.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Cortante%20plato%20festoneado%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: cortante-mini-pochoclera
+  name: "Cortante mini pochoclera"
+  desc: "Cortante con forma de mini pochoclera para crear piezas divertidas y con personalidad. Las medidas no contemplan la reducción de la pasta."
+  desc_en: "Mini popcorn-box-shaped cutter for making fun pieces with personality. Sizes do not account for clay shrinkage."
+  delay: 19
+  image:
+    src: "./images/moldes y cortantes/Cortante mini pochoclera - costo 12000.jpeg"
+    alt: "Cortante con forma de mini pochoclera para cerámica — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Medida única"
+    dims: "6 × 12,5 cm"
+    price: "$12.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Cortante%20mini%20pochoclera%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
