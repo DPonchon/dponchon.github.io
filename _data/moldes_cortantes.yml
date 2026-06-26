@@ -129,3 +129,172 @@
     dims: "Forma cónica"
     price: "$10.000"
   wa_text: "Hola!%20Me%20interesa%20el%20Molde%20taza%20c%C3%B3nica%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: molde-raviol-apoya-cuchara
+  name: "Molde raviol apoya cuchara"
+  desc: "Molde con forma de raviol para crear apoya cucharas únicos en tu cocina. Disponible en dos medidas. Tené en cuenta la reducción de la pasta al cocinar."
+  desc_en: "Ravioli-shaped mold for making one-of-a-kind kitchen spoon rests. Available in two sizes. Remember to account for clay shrinkage during firing."
+  delay: 8
+  image:
+    src: "./images/moldes y cortantes/Molde raviol apoya cuchara x 2 medidas - costo 8000 y 15000.jpeg"
+    alt: "Molde con forma de raviol para apoya cuchara de cerámica — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  sizes:
+    - { tag: S, dims: "7 cm", price: "$8.000" }
+    - { tag: L, tag_class: l, dims: "11,5 cm", price: "$15.000" }
+  wa_text: "Hola!%20Me%20interesa%20el%20Molde%20raviol%20apoya%20cuchara%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: set-cortante-apoya-cuchara-fideo-monito
+  name: "Set cortante apoya cuchara fideo moñito"
+  desc: "Set de 2 cortantes con forma de fideo moñito para crear apoya cucharas divertidos y originales. Las medidas no contemplan la reducción de la pasta."
+  desc_en: "Set of 2 bowtie-pasta-shaped cutters for making fun, original spoon rests. Sizes do not account for clay shrinkage."
+  delay: 9
+  image:
+    src: "./images/moldes y cortantes/Set cortante apoya cuchara fideo monito x 2 unidades - costo 9000.jpeg"
+    alt: "Set de 2 cortantes con forma de fideo moñito para apoya cuchara — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Pack x 2"
+    dims: "12×6,6 cm + 8,3×4,6 cm"
+    price: "$9.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Set%20cortante%20apoya%20cuchara%20fideo%20mo%C3%B1ito%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: cortantes-estrellas
+  name: "Cortantes estrellas"
+  desc: "Set de 5 cortantes con forma de estrella en distintos tamaños. Ideales para dijes, decoraciones y detalles que iluminan cada pieza."
+  desc_en: "Set of 5 star-shaped cutters in different sizes. Ideal for pendants, decorations, and details that brighten every piece."
+  delay: 10
+  image:
+    src: "./images/moldes y cortantes/Cortantes estrellas x 5 unidades - costo 9000.jpeg"
+    alt: "Set de 5 cortantes con forma de estrella en distintos tamaños — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Pack x 5"
+    dims: "Tamaños variados"
+    price: "$9.000"
+  wa_text: "Hola!%20Me%20interesa%20los%20Cortantes%20estrellas%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: cortantes-formas-basicas
+  name: "Cortantes formas básicas"
+  desc: "Set de 9 cortantes con las formas geométricas esenciales: círculos, cuadrados, triángulos y más. La base que necesitás para cualquier proyecto."
+  desc_en: "Set of 9 cutters with essential geometric shapes: circles, squares, triangles, and more. The base you need for any project."
+  delay: 11
+  image:
+    src: "./images/moldes y cortantes/Cortantes formas basicas x 9 unidades - costo 9000.jpeg"
+    alt: "Set de 9 cortantes con formas básicas geométricas — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Pack x 9"
+    dims: "Aprox. 5 cm c/u"
+    price: "$9.000"
+  wa_text: "Hola!%20Me%20interesa%20los%20Cortantes%20formas%20b%C3%A1sicas%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: cortante-plato-pizza
+  name: "Cortante plato pizza"
+  desc: "Cortante con forma de porción de pizza para crear platitos divertidos y originales. Las medidas no contemplan la reducción de la pasta."
+  desc_en: "Pizza-slice-shaped cutter for making fun and original small plates. Sizes do not account for clay shrinkage."
+  delay: 12
+  image:
+    src: "./images/moldes y cortantes/Cortante plato pizza - costo 8000.jpeg"
+    alt: "Cortante con forma de porción de pizza para cerámica — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Medida única"
+    dims: "16 × 18 cm"
+    price: "$8.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Cortante%20plato%20pizza%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: cortante-cuchara
+  name: "Cortante cuchara"
+  desc: "Cortante con forma de cuchara para crear utensilios decorativos en cerámica. Las medidas no contemplan la reducción de la pasta."
+  desc_en: "Spoon-shaped cutter for making decorative ceramic utensils. Sizes do not account for clay shrinkage."
+  delay: 13
+  image:
+    src: "./images/moldes y cortantes/Cortante cuchara - costo 6000.jpeg"
+    alt: "Cortante con forma de cuchara para cerámica — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Medida única"
+    dims: "13 × 3,5 cm"
+    price: "$6.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Cortante%20cuchara%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: cortante-taza-base-redondeada
+  name: "Cortante taza base redondeada"
+  desc: "Cortante para crear tazas con base redondeada y un acabado clásico y elegante. Las medidas no contemplan la reducción de la pasta."
+  desc_en: "Cutter for making mugs with a rounded base and a classic, elegant finish. Sizes do not account for clay shrinkage."
+  delay: 14
+  image:
+    src: "./images/moldes y cortantes/Cortante taza base redondeada - costo 15000.jpeg"
+    alt: "Cortante para tazas con base redondeada — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Medida única"
+    dims: "23,5 × 11 cm"
+    price: "$15.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Cortante%20taza%20base%20redondeada%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: cortante-taza-recta
+  name: "Cortante taza recta"
+  desc: "Cortante combinado para crear tazas rectas con base circular: el rectángulo arma el cuerpo y el círculo cierra la base. Las medidas no contemplan la reducción de la pasta."
+  desc_en: "Combined cutter for making straight-sided mugs with a circular base: the rectangle forms the body, the circle closes the base. Sizes do not account for clay shrinkage."
+  delay: 15
+  image:
+    src: "./images/moldes y cortantes/Cortante taza recta - costo 12000.jpeg"
+    alt: "Cortante para tazas rectas con base circular — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Medida única"
+    dims: "Rect. 22×7,5 cm · Círc. 6,5 cm"
+    price: "$12.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Cortante%20taza%20recta%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: cortante-taza-de-cafe
+  name: "Cortante taza de café"
+  desc: "Cortante combinado para crear pocillos de café con base circular: el rectángulo arma el cuerpo y el círculo cierra la base. Las medidas no contemplan la reducción de la pasta."
+  desc_en: "Combined cutter for making espresso cups with a circular base: the rectangle forms the body, the circle closes the base. Sizes do not account for clay shrinkage."
+  delay: 16
+  image:
+    src: "./images/moldes y cortantes/Cortante taza de cafe - costo 7000.jpeg"
+    alt: "Cortante para tazas de café con base circular — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Medida única"
+    dims: "Rect. 16,5×5,5 cm · Círc. 4,5 cm"
+    price: "$7.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Cortante%20taza%20de%20caf%C3%A9%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
+
+- slug: cortante-etiquetas
+  name: "Cortante etiquetas"
+  desc: "Set de 5 cortantes con formas de etiqueta para crear dijes, marcadores y detalles personalizados en distintas medidas."
+  desc_en: "Set of 5 label-shaped cutters for creating pendants, tags, and personalized details in different sizes."
+  delay: 17
+  image:
+    src: "./images/moldes y cortantes/Cortante etiquetas x 5 unidades - costo 12000.jpeg"
+    alt: "Set de 5 cortantes con formas de etiqueta para cerámica — Sasa Cerámica"
+  badge:
+    type: nuevo
+    label: "Nuevo"
+  single_size:
+    badge_text: "Pack x 5"
+    dims: "Tamaños variados"
+    price: "$12.000"
+  wa_text: "Hola!%20Me%20interesa%20el%20Cortante%20etiquetas%20de%20su%20web.%20%C2%BFTienen%20disponible%3F"
