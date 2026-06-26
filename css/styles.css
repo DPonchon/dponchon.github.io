@@ -1049,6 +1049,10 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   border-radius: var(--radius-sm);
 }
 
+.producto-sizes:has(> .size-opt:nth-child(2):last-child) {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .size-opt {
   display: flex;
   flex-direction: column;
