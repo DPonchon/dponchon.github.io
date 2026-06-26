@@ -820,6 +820,12 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   aspect-ratio: 4 / 5;
 }
 
+@media (min-width: 768px) {
+  #herramientas .producto-card--promo .producto-card__image-wrap {
+    aspect-ratio: 16 / 9;
+  }
+}
+
 /* Image swap (hover) */
 .producto-card__image-wrap.has-result .producto-card__img--main,
 .producto-card__image-wrap.has-result .producto-card__img--result {
